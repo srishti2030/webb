@@ -1,0 +1,221 @@
+ <!doctype html>
+<html>
+
+<head>
+<title>registration form </title>
+</head>
+
+<style>
+
+#aaa
+{
+text-align:right;
+text-align:top;
+}
+
+#bg
+{
+width:100%;
+height:970px;
+margin-top:-8px;
+margin-left:-8px;
+position:fixed;
+z-index:-3;
+}
+
+#opc
+{
+width:100%;
+height:970px;
+background:black;
+margin-top:-8px;
+margin-left:-8px;
+opacity:0.5;
+position:fixed;
+z-index:-2;
+}
+
+#mask
+{
+width:40%;
+height:820px;
+margin:auto;
+box-shadow:10px 10px 10px gray;
+border-radius:20px;
+overflow:auto;
+}
+
+#titel
+{
+text-align:left;
+background:#AF8F6F;
+width:100%;
+margin:auto;
+font-size:35px;
+text-align:center;
+margin-bottom:10px;
+//padding:5px;
+}
+
+#main
+{
+text-align:left;
+background:white;
+width:100%;
+margin:auto;
+opacity:0.60;
+//box-shadow:10px 10px 10px gray;
+border-radius:20px;
+}
+
+#back
+{
+text-align:left;
+text-align:bottom;
+}
+
+table{ width:100%;margin:auto;}
+input[type=text],[type=number]{width:95%;height:35px;border-radius:10px;font-size:15px;}
+input[type=email],{width:95%;height:35px;border-radius:10px;font-size:15px;}
+input[type=submit],[type=reset]{width:30%;height:30px; margin-right:10px;border-radius:10px;}
+
+</style>
+
+<body>
+
+
+<div id="opc">
+</div>
+
+<img id="bg" src="images/scl.jpg">
+
+<div id=aaa>
+<a href="index.html"  >
+<img src="images/h2.png"alt="home" width=2% >
+</a>
+</div>
+
+<div id="mask">
+
+
+
+
+<div id="main">
+<table cellpadding="20">
+<caption style="font-size:20px">
+<h1> Ashoka International School</h1>
+<h2>Registration Form</h2>
+</caption>
+
+<form >
+
+<tr>
+<td><label style="font-size:20px;"><b>Customer Name</b></label></td>
+<td><input type="text" placeholder="Customer name here....." pattern="[a-z,A-Z]{1,30}" required</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Phone Number</b></label></td>
+<td><input type="text" placeholder=" Phone Number....." pattern="</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Age</b></label></td>
+<td><input type="number" placeholder="Type Age...." min="3" max="20"</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Class you want to apply for</b></label></td>
+<td><input type="text" placeholder="Class you want to apply for...."</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Gender</b></label></td>
+<td>
+Male<input type="radio" value="male" name="gender">
+Female<input type="radio" value="female" name="gender">
+Others<input type="radio" value="Others" name="gender">
+</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>DOB</b></label></td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Guardian's First Name</b></label></td>
+<td><input type="text" placeholder="First name here" pattern="[a-z,A-Z]{1,30}" required</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Guardian's Last Name</b></label></td>
+<td><input type="text" placeholder=" Last name here" pattern="[a-z,A-Z]{1,30}"</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Current Address</b></label></td>
+<td><input type="text" placeholder="Street address"</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="text" placeholder="PIN/ZIP Code" style="width:40%;margin-right:10px;"><input type="text" placeholder="Region"  style="width:40%;"></td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>City</b></label></td>
+<td><input list="city">
+</td>
+</tr>
+
+<tr>
+<datalist id="city">
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">USAMumbaioption>
+<option value="Goa">Goa</option>
+<option value="UP">UP</option>
+<option value="Chennai">Chennai</option>
+<option value="Kerela">Kerela</option>
+<option value="Indore">Indore</option>
+<option value="Rajasthan">Rajasthan</option>
+</datalist>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Phone</b></label></td>
+<td><input type="number" placeholder="Phone number...."</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>E-mail</b></label></td>
+<td><input type="email" placeholder="Type Email...."</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Address Proof</b></label></td>
+<td><input type="file"></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="Submit"><input type="reset"></td>
+</tr>
+
+</form>
+</table>
+</div>
+
+
+
+</div>
+
+<div id=back>
+<a href="practicework.html"  >
+<img src="images/back.png"alt="back" width=2% >
+</a>
+</div>
+
+</body>
+
+</html>

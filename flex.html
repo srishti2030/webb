@@ -1,0 +1,514 @@
+ <!doctype html>
+<html>
+
+<head>
+<title>Flex </title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+
+#titel
+{
+width:40%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:30px;
+}
+
+#container
+{
+width:95%;
+height:1700px;
+//border:4px black solid;
+display:flex;
+//background:yellow;
+margin:auto;
+flex-wrap:wrap;
+//flex-direction:row;
+//flex-flow:row-wrap;
+//flex-flow:row-reverse wrap;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//flex-wrap:nowrap;
+//justify-content:center;
+justify-content:space-between;
+//align-items:flex-end;
+//align-items:flex-start;
+align-content:space-around;
+//align-items:flex-center;
+}
+
+.card
+{
+width:22%;
+height:500px;
+background:white;
+border:1px black solid;
+box-shadow:5px 5px 10px #C7C8CC;
+text-align:center;
+}
+
+.pic
+{
+width:90%;
+height:350px;
+margin-top:10px;
+transition:0.40s;
+}
+
+.pic:hover
+{
+transform:scale(1.03)
+}
+
+.info
+{
+margin-left:-40px;
+list-style:none;
+}
+
+#text
+{
+font-size:30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body
+	{background:white;}
+#titel
+{
+width:40%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:15px;
+}
+
+#container
+{
+width:95%;
+height:1970px;
+//border:4px black solid;
+display:flex;
+//background:yellow;
+margin:auto;
+flex-wrap:wrap;
+//flex-direction:row;
+//flex-flow:row-wrap;
+//flex-flow:row-reverse wrap;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//flex-wrap:nowrap;
+//justify-content:center;
+justify-content:space-between;
+//align-items:flex-end;
+//align-items:flex-start;
+align-content:space-around;
+//align-items:flex-center;
+}
+
+.card
+{
+width:47%;
+height:300px;
+background:white;
+border:1px black solid;
+box-shadow:10px 10px 10px #C7C8CC;
+text-align:center;
+}
+
+.pic
+{
+width:90%;
+height:200px;
+margin-top:10px;
+transition:0.40s;
+}
+
+}
+
+#text
+{
+font-size:18px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body
+	{background:white;}
+#titel
+{
+width:40%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:20px;
+}
+
+
+#container
+{
+width:95%;
+height:2300px;
+//border:4px black solid;
+display:flex;
+//background:yellow;
+margin:auto;
+flex-wrap:wrap;
+//flex-direction:row;
+//flex-flow:row-wrap;
+//flex-flow:row-reverse wrap;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//flex-wrap:nowrap;
+//justify-content:center;
+justify-content:space-between;
+//align-items:flex-end;
+//align-items:flex-start;
+align-content:space-around;
+//align-items:flex-center;
+}
+
+.card
+{
+width:47%;
+height:350px;
+background:white;
+border:1px black solid;
+box-shadow:10px 10px 10px #C7C8CC;
+text-align:center;
+}
+
+.pic
+{
+width:90%;
+height:250px;
+margin-top:10px;
+transition:0.40s;
+}
+
+#text
+{
+font-size:22px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body
+	{background:white;}
+#titel
+{
+width:40%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:25px;
+}
+
+#container
+{
+width:93%;
+height:1450px;
+//border:4px black solid;
+display:flex;
+//background:blue;
+margin:auto;
+flex-wrap:wrap;
+//flex-direction:row;
+//flex-flow:row-wrap;
+//flex-flow:row-reverse wrap;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//flex-wrap:nowrap;
+//justify-content:center;
+justify-content:space-between;
+//align-items:flex-end;
+//align-items:flex-start;
+align-content:space-around;
+//align-items:flex-center;
+}
+
+.card
+{
+width:30%;
+height:320px;
+background:white;
+border:1px black solid;
+box-shadow:10px 10px 10px #C7C8CC;
+text-align:center;
+}
+
+.pic
+{
+width:90%;
+height:215px;
+margin-top:10px;
+transition:0.40s;
+}
+
+#text
+{
+font-size:20px;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+	body
+	{background:white;}
+#titel
+{
+width:40%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:25px;
+}
+
+#container
+{
+width:95%;
+height:1100px;
+//border:4px black solid;
+display:flex;
+//background:yellow;
+margin:auto;
+flex-wrap:wrap;
+//flex-direction:row;
+//flex-flow:row-wrap;
+//flex-flow:row-reverse wrap;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//flex-wrap:nowrap;
+//justify-content:center;
+justify-content:space-between;
+//align-items:flex-end;
+//align-items:flex-start;
+align-content:space-around;
+//align-items:flex-center;
+}
+
+.card
+{
+width:22%;
+height:330px;
+background:white;
+border:1px black solid;
+box-shadow:10px 10px 10px #C7C8CC;
+text-align:center;
+}
+
+.pic
+{
+width:90%;
+height:210px;
+margin-top:10px;
+transition:0.40s;
+}
+
+#text
+{
+font-size:18px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body
+	{background:white;}
+
+#titel
+{
+width:40%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:30px;
+}
+
+#container
+{
+width:93%;
+height:1700px;
+//border:4px black solid;
+display:flex;
+//background:yellow;
+margin:auto;
+flex-wrap:wrap;
+//flex-direction:row;
+//flex-flow:row-wrap;
+//flex-flow:row-reverse wrap;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//flex-wrap:nowrap;
+//justify-content:center;
+justify-content:space-between;
+//align-items:flex-end;
+//align-items:flex-start;
+align-content:space-around;
+//align-items:flex-center;
+}
+
+.card
+{
+width:21%;
+height:500px;
+background:white;
+border:1px black solid;
+box-shadow:5px 5px 10px #C7C8CC;
+text-align:center;
+}
+
+.pic
+{
+width:90%;
+height:350px;
+margin-top:10px;
+transition:0.40s;
+}
+
+#text
+{
+font-size:30px;
+}
+
+}
+
+</style>
+
+<body>
+
+<div id="titel"> 
+<h1>The Esthete Craft Store</h1>
+</div>
+
+<div id="container">
+
+<div class="card"><img src="final/c1.jpg" class="pic"  >
+<b id="text">Couple String Art</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c2.jpg" class="pic"  >
+<b id="text">Customised Baby Frame</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c3.jpg" class="pic"  >
+<b id="text"> Ladoo Gopal Basket </b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c4.jpg" class="pic"  >
+<b id="text">Couple Bottel Lamp</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c5.jpg" class="pic"   style="border:0.50px black solid;">
+<b id="text">Bottle Art</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c6.jpg" class="pic"  >
+<b id="text">Name Initial Hanging</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c7.jpg" class="pic"  >
+<b id="text">Bookmark Combo</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c8.jpg" class="pic"  >
+<b id="text">3D Science Model</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c9.jpg" class="pic"  >
+<b id="text">Infinity Calander</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c10.jpg" class="pic"  >
+<b id="text">Handpainted Customised T-shirt</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c11.jpg" class="pic"  >
+<b id="text">Painting</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div class="card"><img src="final/c12.jpg" class="pic"  >
+<b id="text">Candy Packaging Box</b>
+<ol class="info">
+<li><button style="cursor:pointer;">Add to Cart</button>
+<button style="cursor:pointer;">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+
+
+</div>
+
+</body>
+
+</html>

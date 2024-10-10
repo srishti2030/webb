@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<title>RWD</title>
+</head>
+
+<div id=aaa>
+<a href="index.html"  >
+<img src="images/h1.png"alt="home" width=2% >
+</a>
+</div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<a href="index.html"  >
+<img src="images/h1.png"alt="home" width=2% style="margin-left:95%;">
+</a>
+
+<h1> Responsive Web Design</h1>
+
+<style>
+
+#aaa
+{
+text-align:right;
+}
+
+
+nav
+{
+background:gray;
+display:inline-block;
+height:20px;
+padding:2px;
+}
+
+
+nav #menu ol li{transition:0.50s;margin-left:-300px;padding:15px;list-style:none;
+background: #004466;width:100px;text-align:center;
+box-shadow:10px 10px 10px gray;
+border-bottom:1px solid black;cursor:pointer;
+margin-top:-15px;
+}
+
+nav #menu
+{
+//background:red;
+height:20px;
+overflow:hidden;
+}
+
+
+nav #menu:hover
+{
+overflow:visible;
+//background:green;
+}
+
+
+nav #menu:hover ol li{transition:0.50s;margin-left:-40px;
+}
+a:link{color:white;}
+a:visited{color:white;}
+
+
+nav #menu ol li:hover{background:#33bbff;}
+
+#back
+{
+text-align:left;
+text-align:bottom;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body{
+		background:yellow;
+	}
+
+	
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body{
+		background:cyan;
+	}
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body{
+		background:pink;
+	}
+
+
+	nav{
+		background:white;
+		display:inline-block;
+		width:100%;
+	}
+
+
+	nav #menu
+	{
+	overflow:visible;
+	}
+
+
+	nav #menu ol li
+	{
+	display:inline-block;
+	margin-left:0px;
+	padding:15px;
+	}
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body{
+		background:orange;
+	}
+
+}
+
+
+
+</style>
+
+<body>
+
+<nav>
+
+	<div id="menu">Menu
+		
+				<ol>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">service</a></li>
+					<li><a href="#">product</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Photo Gallery</a></li>
+				</ol>
+	 
+	
+
+	</div>
+
+</nav>
+
+<div id=back>
+<a href="practicework.html"  >
+<img src="images/back2.png"alt="back" width=2% >
+</a>
+</div>
+
+</body>
+
+</html>

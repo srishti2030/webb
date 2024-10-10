@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+
+<head> <title> Gradiants
+</title> </head>
+
+<div id=aaa>
+<a href="index.html"  >
+<img src="images/h1.png"alt="home" width=2% >
+</a>
+</div>
+
+<h1 style="text-align:center; font-size:50px;"> Gradiants </h1>
+
+<style>
+
+#aaa
+{
+text-align:right;
+}
+
+body
+{
+font-size:20px;
+text-align:left;
+}
+
+#div1
+{
+width:100%;
+height:350px;
+//background:blue;
+}
+
+#gradient-linear
+{
+width:300px;
+height:300px;
+background-image: linear-gradient(#799351,#A1DD70,#F6EEC9);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#gradient-linear2
+{
+width:300px;
+height:300px;
+background-image: linear-gradient(to right,#799351,#A1DD70,#F6EEC9);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#gradient-linear3
+{
+width:300px;
+height:300px;
+ background-image: repeating-linear-gradient(#799351,#A1DD70 5%,#F6EEC9 10%);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#div2
+{
+width:100%;
+height:350px;
+//background:yellow;
+margin-top:20px;
+}
+
+#gradient-circle
+{
+width:300px;
+height:300px;
+background-image: radial-gradient(#F6EEC9,#A1DD70,#799351);
+//background-image: radial-gradient(#F6EEC9 20%, #A1DD70 50%, #799351 80%);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#gradient-circle2
+{
+width:300px;
+height:300px;
+background-image: radial-gradient(#F6EEC9,#A1DD70,#799351);
+background-image: radial-gradient(#F6EEC9 20%, #A1DD70 50%, #799351 80%);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#gradient-circle3
+{
+width:300px;
+height:300px;
+background-image: radial-gradient(#F6EEC9,#A1DD70,#799351);
+background-image: repeating-radial-gradient(#F6EEC9, #A1DD70 5%, #799351 10%);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+
+#div3
+{
+width:100%;
+height:350px;
+//background:pink;
+margin-top:20px;
+}
+
+#gradient-cone
+{
+width:300px;
+height:300px;
+background-image: conic-gradient(#799351,#A1DD70,#F6EEC9);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#gradient-cone2
+{
+width:300px;
+height:300px;
+background-image: conic-gradient(#799351 45deg,#A1DD70 90deg,#F6EEC9 210deg);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#gradient-cone3
+{
+width:300px;
+height:300px;
+background-image: repeating-conic-gradient(#799351,#A1DD70 5%,#F6EEC9 10%);
+border-radius: 50%;
+margin:30px;
+float:left;
+}
+
+#back
+{
+//text-align:left;
+//text-align:bottom;
+}
+
+</style>
+
+<body>
+
+<b>CSS gradients let you display smooth transitions between two or more specified colors.</b>
+
+<b>CSS defines three types of gradients:</b>
+<ul>
+<li><b>Linear Gradients (goes down/up/left/right/diagonally)</b></li>
+<li><b>Radial Gradients (defined by their center)</b></li>
+<li><b>Conic Gradients (rotated around a center point)</b></li>
+</ul>
+
+<b style="font-size:30px;">Linear Gradients</b>
+	<br/>
+. To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+	<br/>
+<b style="font-size:25px;">Syntax</b>
+	<br/>
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+	<br/>
+<b style="font-size:25px;">Repeating a linear-gradient</b>
+	<br/>
+The repeating-linear-gradient() function is used to repeat linear gradients:
+[ background-image: repeating-linear-gradient(red, yellow 10%, green 20%);]
+
+
+<div id="div1">
+
+<div id="gradient-linear">
+</div>
+<div id="gradient-linear2">
+</div>
+<div id="gradient-linear3">
+</div>
+
+</div>
+
+<br/>
+<b style="font-size:30px;">Radial Gradients</b>
+	<br/>
+A radial gradient is defined by its center.
+To create a radial gradient you must also define at least two color stops.
+	<br/>	
+<b style="font-size:25px;">Syntax</b>
+	<br/>
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+	<br/>
+<b style="font-size:25px;">Repeating a radial-gradient</b>
+	<br/>
+The repeating-radial-gradient() function is used to repeat radial gradients:
+[background-image: repeating-radial-gradient(red, yellow 10%, green 15%);]
+
+
+<div id="div2">
+
+<div id="gradient-circle">
+</div>
+<div id="gradient-circle2">
+</div>
+<div id="gradient-circle3">
+</div>
+
+</div>
+
+<br/>
+<b style="font-size:30px;">Conic Gradients</b>
+	<br/>
+A conic gradient is a gradient with color transitions rotated around a center point.
+To create a conic gradient you must define at least two colors.
+	<br/>
+<b style="font-size:25px;">Syntax</b>
+	<br/>
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+	<br/>
+<b style="font-size:25px;">Repeating a Conic Gradient</b>
+<br/>
+The repeating-conic-gradient() function is used to repeat conic gradients:
+[background-image: repeating-conic-gradient(red 10%, yellow 20%);]
+
+
+<div id="div3">
+
+<div id="gradient-cone">
+</div>
+<div id="gradient-cone2">
+</div>
+<div id="gradient-cone3">
+</div>
+
+</div>
+<br/>
+<div id=back>
+<a href="practicework.html"  >
+<img src="images/back2.png"alt="back" width=2% >
+</a>
+</div>
+
+</body>
+</html>

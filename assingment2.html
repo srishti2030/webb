@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{margin:0%;}
+
+    a:link{color:Black; text-decoration:none}
+    a:visited{color:Black; text-decoration:none}
+    a:hover{text-decoration:none}
+    a:active{}
+
+
+    #main
+    {
+        width:100%;
+        height:600px;
+        background-image: linear-gradient(#BAA7E7,#DACFEF,#E5DAFC);
+        position:fixed;
+        z-index:-3;
+    }
+    #hh
+    {
+        width:40%;
+        backgrond:hotpink;
+        margin:auto;
+    }
+
+    #menu
+{
+color:white;
+margin:30px;
+float:left;
+}
+
+.button-main
+{
+width:200px;
+height:100px;
+backround:white;
+opcity:0.5;
+}
+
+.button-main:hover
+{
+width:200px;
+height:100px;
+}
+
+.button
+{
+color:black;
+padding:10px 10px;
+borer: 2px solid blue;
+border-radius:8px;
+font-size:18px;
+marin:10px;
+backdrop-filter:blur(10px);
+}
+
+@keyframes plus
+{
+from{box-shadow: 0px 0px 40px white,0px 0px 80px white;}
+}
+
+.button:hover
+{
+animation:plus 2s ease-in-out;
+}
+@keyframes head
+{
+from{box-shadow: 0px 0px 40px #57A6A1,0px 0px 80px #00215E;}
+}
+
+#hed:hover
+{
+animation:head 2s ease-in-out;
+}
+#butn
+{
+    width:25%;
+    backgrund:red;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#butnin
+{
+    width:40%;
+    heiht:20px;
+    backround:blue;
+    padding:7px;
+    text-align:center;
+    font-size:20px;
+    border:1px black solid;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.50s;
+}
+#butnin:hover
+{
+    background:rgb(234, 220, 255);
+    border:0px;
+}
+</style>
+<body>
+    <div id="main">
+        <img src="images/bgp.jpg" width="100%">
+    </div>
+    <div id="hh"><img src="images/na2.png" width="100%"></div>
+<br/>
+    <div id="butn">
+        <a href="assingment.html"><div id="butnin" style="width:100%;">HTML</div></a>
+        <div id="butnin">JavaScript</div>
+    </div>
+
+<br/>
+
+<div id="menu">
+    <a class="button-main" href="jsfirst.html">
+    <span  class="button">First
+    </span>
+    </a>
+    </div>
+    
+    <div id="menu">
+    <a class="button-main" href="function.html">
+    <span  class="button">Function
+    </span>
+    </a>
+    </div>
+    
+    <div id="menu">
+    <a class="button-main" href="onwheelzoom.html">
+    <span  class="button">On Wheel Zoom
+    </span>
+    </a>
+    </div>
+    
+    <div id="menu">
+    <a class="button-main" href="colorslider.html">
+    </span>
+    <span  class="button">Color slider
+    </span>
+    </a>
+    </div>
+    
+    <div id="menu">
+    <a class="button-main" href="drawing.html">
+    </span>
+    <span  class="button">Drawing
+    </span>
+    </a>
+    </div>
+    
+    <div id="menu">
+    <a class="button-main" href="drawing2.html">
+    </span>
+    <span  class="button">Drawing2
+    </span>
+    </a>
+    </div>
+    
+    <div id="menu">
+        <a class="button-main" href="bannerjs.html">
+        </span>
+        <span  class="button">Banner1
+        </span>
+        </a>
+        </div>
+
+        <div id="menu">
+    <a class="button-main" href="bannerjs2.html">
+    </span>
+    <span  class="button">Banner2
+    </span>
+    </a>
+    </div>
+
+    <div id="menu">
+        <a class="button-main" href="bannerjs3.html">
+        </span>
+        <span  class="button">Banner3
+        </span>
+        </a>
+        </div>
+
+        
+</body>
+</html>

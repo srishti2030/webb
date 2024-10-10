@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head><title>LuxeRayz</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+
+a:link{color:Black;}
+a:visited{color:Black;}
+
+#layer
+{
+width:100%;
+height:945px;
+background:black;
+margin-top:-7px;
+margin-left:-7px;
+opacity:0.7;
+position:fixed;
+z-index:-2;
+}
+
+#banner
+{
+width:100%;
+//height:945px;
+//background:cyan;
+margin-top:-87px;
+margin-left:-7px;
+//border:0.50px black solid;
+position:fixed;
+z-index:-3;
+}
+
+#main
+{
+text-align:left;
+background:black;
+color:white;
+width:40%;
+margin-left:200px;
+margin-top:80px;
+opacity:0.60;
+box-shadow:10px 10px 10px gray;
+border-radius:20px;
+}
+
+#logo
+{
+width:40%;
+margin:auto;
+opacity:1;
+}
+
+table{ width:100%;margin:auto;}
+input[type=text],[type=number]{width:95%;height:35px;border-radius:10px;font-size:15px;}
+input[type=email],{width:95%;height:35px;border-radius:10px;font-size:15px;}
+input[type=submit],[type=reset]{width:30%;height:30px; margin-right:10px;border-radius:10px;}
+
+</style>
+
+<body>
+
+
+<div id="banner">
+<img src="images/bg.jpg" width="100%" height="100%">
+</div>
+
+
+<div id="main">
+<table cellpadding="12">
+
+<form >
+
+<tr>
+<td><label style="font-size:20px;"><b>Name</b></label></td>
+<td><input type="text" placeholder="Customer name here....." pattern="[a-z,A-Z]{1,30}" required</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Phone Number</b></label></td>
+<td><input type="text" placeholder=" Phone Number....." </td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>E-mail Address</b></label></td>
+<td><input type="text" placeholder=" E-mail Here....." </td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Gender</b></label></td>
+<td>
+Male<input type="radio" value="male" name="gender">
+Female<input type="radio" value="female" name="gender">
+Others<input type="radio" value="Others" name="gender">
+</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Address</b></label></td>
+<td><input type="text" placeholder="House no. /Building no."</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="text" placeholder="PIN/ZIP Code" style="width:40%;margin-right:10px;"><input type="text" placeholder="City"  style="width:40%;"></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="text" placeholder="Land Mark/ Nearby Famous Place....." style="w"></td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>State</b></label></td>
+<td><input type="text" placeholder="Your state........" 
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><button style="cursor:pointer; width:30%; height:30px; border-radius:10px;"><a href="webb.html">Submit</button></li>
+<input type="reset"></td>
+</tr>
+
+</form>
+</table>
+</div>
+
+
+</body>
+
+</html>
