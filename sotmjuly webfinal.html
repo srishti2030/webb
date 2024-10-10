@@ -1,0 +1,979 @@
+<!doctype html>
+<html>
+
+<head><title>Frozen Bliss</title>
+</head>
+
+<style>
+
+a:link{color:Black; text-decoration:none}
+a:visited{color:Black; text-decoration:none}
+a:hover{text-decoration:none}
+a:active{}
+
+html{
+scroll-behavior:smooth;
+}
+
+#bar
+{
+width:97%;
+//height:80px;
+//background:pink;
+margin-top:10px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+position:fixed;
+z-index:4;
+}
+
+#logo
+{
+width:14%;
+//height:80px;
+//background:green;
+}
+
+#info
+{
+width:50%;
+height:22px;
+//background:green;
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#con
+{
+width:20%;
+//height:80px;
+//background:red;
+margin-top:30px;
+//margin-left:70px;
+}
+
+
+#aa
+{
+width: 15%;
+//height:25px;
+background:white;
+text-align:center;
+cursor:pointer;
+opacity:0.60;
+}
+
+#aa:hover
+{
+opacity:1;
+}
+
+#main
+{
+width:100%;
+//height:700px;
+//background:orange;
+}
+
+#sell
+{
+width:100%;
+//height:700px;
+//background:cyan;
+margin-top:-9px;
+}
+
+#var
+{
+width:100%;
+//height:400px;
+//background:green;
+//display:flex;
+//flex-wrap:wrap;
+//justify-content:space-between;
+}
+
+#vr
+{
+width:20%;
+//height:250px;
+/background:pink;
+//border-radius:10%;
+cursor:pointer;
+transition:0.50s;
+}
+
+#vr:hover
+{
+transform:scale(1.10) ;
+}
+
+#next
+{
+width:100%;
+//height:900px;
+background:#FFEBEB;
+}
+
+#menu
+{
+width:100%;
+//height:600px;
+background:#FFEBEB;
+}
+
+#bb
+{
+width:65%;
+//height:500px;
+//background:yellow;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#mnu
+{
+width:18%;
+//height:400px;
+//background:cyan;
+}
+
+#mnu2
+{
+width:75%;
+//height:500px;
+//background:cyan;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#imge
+{
+width:46.5%;
+//height:350px;
+//background:orange;
+//margin-top:25px;
+transition:0.50s;
+}
+
+#imge:hover
+{
+transform:scale(1.10) ;
+}
+
+#imge2
+{
+width:46.5%;
+//height:350px;
+//background:orange;
+//margin-top:25px;
+transition:0.50s;
+}
+
+#imge2:hover
+{
+transform:scale(1.10) ;
+}
+
+#review
+{
+width:100%;
+//height:700px;
+//background:blue;
+}
+
+#vr2
+{
+width:27%;
+//height:250px;
+/background:pink;
+//border-radius:10%;
+cursor:pointer;
+transition:0.50s;
+}
+
+#vr2:hover
+{
+transform:scale(1.10) ;
+}
+
+#loc
+{
+width:100%;
+//height:400px;
+background:#FFEBEB;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#loca
+{
+width:45%;
+height:350px;
+//background:grey;
+}
+
+#head
+{
+width:100%;
+//background:red;
+text-align:center;
+font-size:20px;
+}
+
+#flxee
+{
+width:70%;
+//background:blue;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#flx
+{
+width:90%;
+//background:blue;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#flxe
+{
+width:80%;
+//background:pink;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#about
+{
+width:100%;
+//height:350px;
+background:#FFEBEB;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#abut
+{
+width:20%;
+//height:350px;
+//background:red;
+}
+
+#abute
+{
+width:75%;
+//height:350px;
+//background:yellow;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#ab
+{
+width:21%;
+//height:350px;
+//background:orange;
+}
+
+#ab2
+{
+width:23%;
+//height:350px;
+//background:orange;
+}
+#a1
+{
+width:60%;
+//height:500px;
+margin:auto;
+//background:orange;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#a11
+{
+width:42%;
+//height:500px;
+background:#FFEBEB;
+}
+
+#a12
+{
+width:55%;
+//height:500px;
+//background:green;
+//margin:auto;
+}
+
+#names
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names2
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names2:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names3
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names3:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names4
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names4:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names5
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names5:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#icn
+{
+width:18%;
+//height:30px;
+//background:yellow;
+}
+
+#p
+{
+width:80%;
+//background:yellow;
+margin-top:7px;
+}
+
+#cate
+{
+width:100%;
+//height:300px;
+background:#FFEBEB;
+}
+
+#catein
+{
+width:70%;
+//height:200px;
+//background:yellow;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#catein2
+{
+width:70%;
+//height:200px;
+//background:yellow;
+margin:auto;
+margin-top:8px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+#cat
+{
+width:17%;
+height:120px;
+//background:cyan;
+border-radius:50%;
+transition:0.50s;
+cursor:pointer;
+}
+
+#cat:hover
+{
+transform:scale(1.10) ;
+}
+
+#nam
+{
+width:17%;
+//height:120px;
+//background:green;
+text-align:center;
+cursor:pointer;
+transition:0.50s;
+}
+
+#nam:hover
+{
+transform:scale(1.10) ;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body
+	{background:white;}
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body
+	{background:white;}
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body
+	{background:white;}
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+	body
+	{background:white;}
+
+#names
+{
+width:90%;
+height:45px;
+//background:red;
+padding:2px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names2
+{
+width:90%;
+height:45px;
+//background:red;
+padding:2px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names3
+{
+width:90%;
+height:45px;
+//background:red;
+padding:2px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names4
+{
+width:90%;
+height:45px;
+//background:red;
+padding:2px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names5
+{
+width:90%;
+height:45px;
+//background:red;
+padding:2px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#icn
+{
+width:18%;
+//height:30px;
+//background:yellow;
+margin-top:7px;
+}
+
+#p
+{
+width:80%;
+//background:yellow;
+//margin-top:7px;
+}
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body
+	{background:white;}
+
+#names
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names2
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names2:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names3
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names3:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names4
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names4:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+#names5
+{
+width:80%;
+//background:red;
+padding:20px;
+margin:auto;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+transition:0.5s;
+}
+
+#names5:hover
+{
+background:#E2696E;
+color:white;
+//border-radius:10%;
+}
+
+
+#icn
+{
+width:18%;
+//height:30px;
+//background:yellow;
+}
+
+#p
+{
+width:80%;
+//background:yellow;
+margin-top:7px;
+}
+
+}
+
+</style>
+
+<body style="background:#FFEBEB;">
+
+<div id="bar">
+	<div id="logo"> <img src="images/icc.png" width="100%" 	></div>
+	<div id="info">
+		<div id="aa"> <a href="#first"> Menu </div> </a>
+		<div id="aa"> <a href="#aboutus">About us</div> </a>
+		<div id="aa"> <a href="#varients">Varients</div> </a>
+		<div id="aa"> <a href="#desserts">Desserts</div> </a>
+		<div id="aa"> <a href="#reviews">Reviews</div> </a>
+		<div id="aa"> <a href="#more">More</div> </a>
+	</div>
+
+<div id="con"><input type="text" placeholder="Search" style="width:100%; hight:40%; border-radius:7px;">
+</div>
+</div>
+
+</div>
+
+<div style="width:100%; height:40px; background:white; margin-top:-10px;">
+</div>
+
+<div id="main">
+<img src="images/bnr.jpg" width="100%" height="100%">
+</div>
+
+<div id="sell">
+<img src="images/about.jpg" width="100%" height="100%">
+</div>
+
+
+
+<a name="first">
+<div id="cate">
+<div id="head"> <h1><b>Our</b> <b style="color:#E2696E;">Menu</b></h1></div>
+<div id="catein">
+	<div id="cat"> <img src="images/cr1.png" style="margin:auto;" 	width="100%"> </div>
+	<div id="cat"> <img src="images/cr2.png" style="margin:auto;" 	width="100%"> </div>
+	<div id="cat"> <img src="images/cr3.png" style="margin:auto;" 	width="100%"> </div>
+	<div id="cat"> <img src="images/cr4.png" style="margin:auto;" 	width="100%"> </div>
+	<div id="cat"> <img src="images/cr5.png" style="margin:auto;" 	width="100%"> </div>
+
+</div>
+
+<div id="catein2">
+	<div id="nam"> Ice creams </div>
+	<div id="nam"> Smoothies </div>
+	<div id="nam"> Ice cream sandwich </div>
+	<div id="nam"> Frozen dessert </div>
+	<div id="nam"> Boba tea </div>
+
+</div>
+
+<br/>
+</div>
+
+<a name="aboutus">
+<div id="next">
+<div id="head"> <h1><b>Why Choose Our</b> <b style="color:#E2696E;">Ice Cream</b></h1></div>
+
+<div id="a1"> 
+<div id="a11"> 
+<img src="images/in1.png"style="margin:auto;"width="100%"> </div>
+<div id="a12"><img src="images/pic2.png"style="margin:auto;"width="100%"> </div>
+</div>
+
+<br/>
+
+<div id="a1"> 
+<div id="a12"> <img src="images/pic1.png" style="margin:auto;" width="100%"></div>
+<div id="a11">
+<img src="images/in2.png"style="margin:auto;"width="100%"> </div>
+</div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+</div>
+
+<a name="varients">
+<div id="var">
+<div id="head"> <h1><b>Ice Cream</b> <b style="color:#E2696E;">Variants</b></h1></div>
+<div id="flx">
+	<div id="vr"> <img src="images/vr1.png" width="100%" height="100%"> </div>
+	<div id="vr"> <img src="images/vr2.png" width="100%" height="100%"> </div>
+	<div id="vr"> <img src="images/vr3.png" width="100%" height="100%"> </div>
+	<div id="vr"> <img src="images/vr4.png" width="100%" height="100%"> </div>
+</div>
+<br/><br>
+</div>
+
+
+<a name="desserts">
+
+<div id="menu">
+<div id="head"> <h1><b>Desserts That Always</b> <b style="color:#E2696E;">Make You Fall in Love</b></h1></div>
+<div id="bb">
+
+
+
+
+<div id="mnu"> 
+<div id="names"> <div id="icn"> <img src="images/ic1.png" width="100%"></div> 
+<div id="p">Frozen yogurt</div> </div>
+
+<div id="names2"> <div id="icn"> <img src="images/ic2.png" width="100%"></div>
+<div id="p">Soft <br/>Serve</div> </div>
+
+<div id="names3"> <div id="icn"> <img src="images/ic3.png" width="100%"></div>
+<div id="p">Sorbet<br/> Ice cream</div> </div>
+
+<div id="names4"> <div id="icn"> <img src="images/ic4.png" width="100%"></div>
+<div id="p">Ice cream Sandwich</div> </div>
+
+<div id="names5"> <div id="icn"> <img src="images/ic5.png" width="100%"></div>
+<div id="p">Frozen custard</div> </div></div>
+
+
+<div id="mnu2">
+<div id="imge"> <img src="images/c1.png" width="100%"></div>
+
+<div id="imge2"> <img src="images/c4.png" width="100%"></div>
+
+</div>
+</div>
+
+<br/><br/><br/>
+</div>
+
+
+<a name="reviews">
+<div id="review">
+<img src="images/re.jpg" style="margin:auto;" width="100%" height="100%"></div>
+
+
+
+<a name="varients">
+<div id="var">
+<div id="head"> <h1><b>Your Favourite Dessert</b> <b style="color:#E2696E;">Delivery Partner</b></h1></div>
+<div id="flxee">
+	<div id="vr2"> <img src="images/l1.png" width="100%" 	height="100%"> </div>
+	<div id="vr2"> <img src="images/l2.png" width="100%" 	height="100%"> </div>
+	<div id="vr2"> <img src="images/l3.png" width="100%" 	height="100%"> </div>
+</div>
+<br/><br><br/><br>
+
+</div>
+	
+
+
+<div id="loc">
+
+<div id="flxe">
+	<div id="loca">
+    <h1>We are glad to see you</h1>
+    <h3>Accept orders on:</h3>
+	+91 1122334455
+	<br/><br/>
+	<h3>Come to us</h3>
+	486/1, 1st Floor, GT Road Dilshad Garden, opposit Dilshad Garden Metro Station Lane, Est Delhi-110095
+
+	</div>
+<div id="loca">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14001.770884657253!2d77.3186367!3d28.6764004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb753c087567%3A0x24b89899528034db!2sArena%20Animation%20Dilshad%20Garden%2C%20Delhi%20-%20VFX%2FAnimation%2FGame%20Design%2FUI-UX%2FWeb%20Design%20Courses%20in%20Delhi!5e0!3m2!1sen!2sin!4v1714816306248!5m2!1sen!2sin" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</div>
+<br/>
+<br/>
+
+</div>
+
+
+<a name="more">
+<div id="about">
+	<div id="abut">
+		<div style="width:60%; margin:20px;"><img src="images/icc2.png" width="100%"></div>
+		<div style="width:85%; margin:20px;">Our job is to filling your tummy
+			with delicious Desserts and with
+			fast and free delivery</div>
+
+			<div style="width:60%; "><img src="images/icons.png" width="100%"></div>
+	</div>
+
+
+<div id="abute">
+	<div id="ab"> 
+		<p><b> About </b></p>
+		<p>About us</p>
+		<p>Features</p>
+		<p>News</p>
+		<p>Menu</p>
+	</div>
+
+	<div id="ab"> 
+		<p><b> Company</b></p>
+		<p>Why Frozen Bliss</p>
+		<p>Partner with us</p>
+		<p>FAQ</p>
+		<p>Blog</p>
+	</div>
+
+	<div id="ab"> 
+		<p><b> Support </b></p>
+		<p>Account</p>
+		<p>Support Center</p>
+		<p>Feedback</p>
+		<p>Contact Us</p>
+		<p>Accessablity</p>
+	</div>
+
+	<div id="ab"> 
+		<p><b> Get in touch </b></p>
+		<p>Question or Feedback ?</p>
+		<p>We'd love to hear from You</p>
+	</div>
+
+	</div>
+	<br/><br/><br/><br/><br/><br/>
+</div>
+
+<div></div>
+</body>
+</html>

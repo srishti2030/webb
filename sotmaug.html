@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+
+<head><title>Viksit Bharat</title>
+</head>
+
+<style>
+
+a:link{color:Black; text-decoration:none}
+a:visited{color:Black; text-decoration:none}
+a:hover{text-decoration:none}
+a:active{}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0px;
+}
+
+#bg
+{
+width:100%;
+position:fixed;
+z-index:-2;
+}
+
+#bar
+{
+width:100%;
+//height:40px;
+//background:red;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+position:fixed;
+z-index:4;
+}
+
+#logo
+{
+width:10%;
+//height:40px;
+//background:yellow;
+}
+
+#info
+{
+width:40%;
+height:16px;
+//background:green;
+margin-top:20px;
+margin-left:-80px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#con
+{
+//width:20%;
+//height:80px;
+//background:red;
+margin-top:30px;
+//margin-left:70px;
+}
+
+#aa
+{
+//width: 15%;
+//height:25px;
+background:white;
+text-align:center;
+cursor:pointer;
+font-size:13px;
+//opacity:0.60;
+}
+
+#aa:hover
+{
+//opacity:1;
+}
+
+#search
+{
+width:18%;
+height:18px;
+float:left;
+margin-top:20px;
+margin-left:280px;
+border-radius:3px;
+margin-right:9px;
+}
+
+#video
+{
+width:100%;
+opacity:0.60;
+margin-top:-20px;
+}
+
+@keyframes plus
+{
+from{box-shadow:0px 0px 40px #078707;}
+}
+
+#aa:hover
+{
+animation:plus 2s ease-in-out;
+}
+
+#main
+{
+width:80%;
+//height:16px;
+//background:green;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#pic
+{
+width:35%;
+//height:16px;
+//background:pink;
+}
+
+#text
+{
+width:55%;
+//height:16px;
+//background:yellow;
+}
+
+#banr
+{
+width:90%;
+margin:auto;
+}
+
+#top
+{
+width:100%;
+}
+
+#te
+{
+width:95%;
+//height:50px;
+margin:auto;
+//background:red;
+}
+
+#qu
+{
+width:95%;
+//height:50px;
+//background:pink;
+margin:auto;
+border-radius:10px;
+border:2px black solid;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#pic2
+{
+width:25%;
+//height:16px;
+//background:pink;
+}
+
+#text2
+{
+width:70%;
+//height:16px;
+//background:yellow;
+}
+
+#flex
+{
+width:95%;
+height:380px;
+//background:pink;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#box
+{
+width:22%;
+//height:150px;
+//background:blue;
+transition:0.50s;
+}
+
+#box:hover
+{
+transform:scale(1.10) ;
+}
+
+.im
+{
+transition:0.50s;
+}
+
+.im:hover
+{
+border-radius:10px;
+}
+
+#about
+{
+width:100%;
+//height:350px;
+//background:#FFEBEB;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#abut
+{
+width:20%;
+//height:350px;
+//background:red;
+}
+
+#abute
+{
+width:75%;
+//height:350px;
+//background:yellow;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#ab
+{
+width:21%;
+//height:350px;
+//background:orange;
+}
+
+#pic3
+{
+width:17%;
+//height:100px;
+//background:pink;
+margin-bottom:20px;
+}
+
+#text3
+{
+width:78%;
+//height:100px;
+//background:yellow;
+margin-bottom:20px;
+}
+
+#head
+{
+width:100%;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+
+#info
+{
+width:38%;
+height:16px;
+//background:green;
+margin-top:40px;
+margin-left:-500px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#con
+{
+//width:20%;
+//height:80px;
+//background:red;
+margin-top:50px;
+//margin-left:-70px;
+}
+
+#aa
+{
+//width: 15%;
+//height:25px;
+background:white;
+text-align:center;
+cursor:pointer;
+font-size:15px;
+//opacity:0.60;
+}
+
+#aa:hover
+{
+//opacity:1;
+}
+
+#search
+{
+width:14%;
+height:18px;
+float:left;
+margin-top:35px;
+margin-left:280px;
+border-radius:3px;
+margin-right:9px;
+}
+
+#flex
+{
+width:95%;
+height:680px;
+//background:pink;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+
+}
+
+
+
+
+</style>
+
+<body>
+
+<div id="bg">
+<video id="video" autoplay loop muted>
+<source src="images/bgvid.mp4" type="video/mp4" />
+Your browser does not support video
+</video>
+</div>
+
+<div id="bar">
+	<div id="logo"> <img src="images/logo.png" width="100%" 	></div>
+	<div id="info">
+		<div id="aa"> <a href="#banner"> Home </div> </a>
+		<div id="aa"> <a href="#a2">About</div> </a>
+		<div id="aa"> <a href="#vik">Viksit Bharat</div> </a>
+		<div id="aa"> <a href="#ind">Independence Day</div> </a>
+		<div id="aa"> <a href="#his">History</div> </a>
+		<div id="aa"> <a href="#free">Freedom Fighters</div> </a>
+		<div id="aa"> <a href="#con">Contests</div> </a>
+		<div id="aa"> <a href="#more">More</div> </a>
+	</div>
+
+<div id="search">
+<input type="text" placeholder="Search" style="width:100%; height:100%; border-radius:10px;">
+</div>
+
+
+</div>
+
+</div>
+
+<div style="height:80px;width:80%;"></div>
+
+<a name="banner">
+<div id="banr">
+<img src="images/bnar.jpg" width="100%"></div>
+
+<a name="a2">
+
+<div id="main">
+<div id="pic"><img src="images/first.png" width="100%"></div>
+
+
+<div id="text">
+
+<h2>About Our India</h2>
+<p>Before independence <b>INDIA </b>was a land rich in culture and diversity but burdened by colonial oppression. British rule exploited India's resources, stifling its economic growth and political aspirations. A spirit of resistance ignited, culminating in a decades-long struggle for freedom. Leaders like Gandhi and Nehru inspired millions to unite against colonial tyranny. </p>
+<p>Finally, on <b>August 15, 1947</b> India emerged as an independent nation. However, the journey ahead was fraught with challenges: poverty, illiteracy, and communal tensions plagued the young republic. Despite these hurdles, India embarked on a path of progress, building democratic institutions, fostering economic growth, and advancing in science and technology. Though faced with ongoing complexities, India has transformed into a global power, preserving its cultural heritage while embracing modernity.</p>
+<p>India has a unique culture and is one of the oldest and greatest civilizations of the world. India has achieved all-round socio-economic progress since its Independence. India covers an area of 32,87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west.</p>
+<p>Lying entirely in the northern hemisphere, the mainland extends between latitudes 8° 4' and 37° 6' north, longitudes 68° 7' and 97° 25' east and measures about 3,214 km from north to south between the extreme latitudes and about 2,933 km from east to west between the extreme longitudes. It has a land frontier of about 15,200 km. The total length of the coastline of the mainland, Lakshadweep Islands and Andaman & Nicobar Islands is 7,516.6 km.</p>
+</div>
+
+</div>
+
+
+<a name="vik">
+<div id="top">
+<img src="images/oran.png" width="100%"></div>
+<div id="te">
+
+<h2>What is Viksit Bharat?</h2>
+<p>The term ‘Viksit Bharat’ means ‘Developed India’. Viksit Bharat 2047 represents the government’s vision to transform the county into a developed entity by its 100th independence in 2047. The four pillars of Viksit Bharat are Yuva (Youth), Garib (Poor), Mahilayen (Women) and Annadata (Farmers). </p>
+
+<p>The Finance Minister made the following announcements the Budget 2024 to achieve the goal of Viksit Bharat 2047:<p>
+<ul>
+<li>The government will formulate a plan, Purvodaya, for the all-round development of the eastern region of India, covering Jharkhand, Bihar, Odisha, West Bengal and Andhra Pradesh. This will cover infrastructure, human resource development, and the generation of economic opportunities to make the region an engine to attain Viksit Bharat.</li>
+
+<li>Nuclear energy is expected to be a very significant part of Viksit Bharat. Towards that pursuit, the government will partner with the private sector to set up Bharat Small Reactors, research and development of Bharat Small Modular Reactor, and research and development of newer technologies for nuclear energy.</li></ul>
+
+
+<h2>Viksit Bharat @2047: Vision, Purpose, and Significance</h2>
+<p>The vision of Viksit Bharat is that of a prosperous Bharat in harmony with modern infrastructure and nature and giving opportunities for all citizens of all regions to reach their potential.
+The Finance Minister, in her Budget 2024 speech, stated that many development and growth-enabling reforms are needed in the states to realise Viksit Bharat's vision. Thus, a provision of Rs.1.5 lakh crore as a long-term interest-free loan is proposed to the state governments to support their resource allocation for infrastructural developments. Helping MSMEs grow and compete will also be a part of the Viksit Bharat roadmap.
+On 11 December 2023, the PM launched ‘Viksit Bharat @2047: Voice of Youth’ via video conferencing. At the launch, he highlighted the role of educational institutions in an individual’s personality development and stated that a nation becomes developed only when there is development of its people. He also underlined the need to channel the energy of every university’s students and youth towards achieving the common goal of Viksit Bharat. </p>
+
+<div id="qu">
+<div id="pic2"><img src="images/modiji.png" width="100%" style="margin-bottom:-5px;"></div>
+
+<div id="text2">
+<img src="images/it.png" width="100%">
+</div>
+</div>
+
+
+<p>The Viksit Bharat @2047: Voice of Youth was launched to realise the vision of Viksit Bharat, which demands a firm belief in India’s destiny, unwavering dedication and a profound recognition of the people’s vast potential capabilities and talent, particularly the youth. 
+The PM also extended an invitation to the youth to engage in the transformative agenda through the youth movement known as ‘Ideas from Youth for Viksit Bharat@2047’. He urged everyone to go beyond their limits and contribute their ideas to the vision of Viksit Bharat@2047. </p>
+
+<p>The PM suggested running special campaigns in every university and college in India to connect more youth with this campaign. Subsequently, the government launched the ‘Ideas Portal’ related to Viksit Bharat to provide suggestions on five different themes.
+The government will form a high-powered committee to extensively consider the challenges arising from quick population growth and demographic changes. This committee will make recommendations to address these challenges comprehensively relating to the goal of Viksit Bharat.</p>
+
+<h2>How Should Viksit Bharat Look in 2047 in Different Aspects?</h2>
+Viksit Bharat 2047 is the vision to <b>transform India into a developed nation by 2047</b>, the 100th year of independence. This vision encompasses various facets of development, such as economic growth, environmental sustainability, social progress and good governance, to make India a developed nation by 2047.
+<br/>
+<ul><h3><b>Below provided is what the different aspects of Viksit Bharat should look like in 2047:</b></h3>
+
+<li><b>Economic Growth:</b> A Viksit Bharat should have a resilient and strong economy that can provide opportunities and a high standard of living for all its citizens. The economy should be able to cope with the challenges of the 21st century based on entrepreneurship, innovation and competitiveness.</li>
+
+<li><b>Environmental Sustainability: </b>A Viksit Bharat should have a clean and green environment to preserve India’s biodiversity and natural resources. The environment should be able to mitigate the impacts of climate change based on restoration, conservation and resilience. </li>
+
+<li><b>Social Progress: </b>A Viksit Bharat should have an inclusive and harmonious society that ensures the dignity and well-being of all its citizens. Society should be able to celebrate and respect India’s cultural heritage based on justice, equality and diversity.</li>
+
+<li><b>Good Governance:</b> A Viksit Bharat should have an agile governance with sound policies and accountability. A good governance system is where there is provision to collect credible data, analyse areas for correction and act swiftly to improve the country based on teamwork, reflection, empathy and consultation.</li>
+</ul>
+</div>
+
+
+
+
+<a name="ind">
+
+<div id="top">
+<img src="images/green.png" width="100%"></div>
+<div id="te">
+<p>This year, Independence Day falls on a Thursday, with celebrations echoing the spirit of 'Viksit Bharat.' The theme reflects the vision of a progressive, inclusive, and empowered India by becoming a developed nation by 2047 – 100 years after independence.</p>
+
+<p>As part of Independence Day Celebrations-2024, the Ministry of Defence, in collaboration with MyGov, aims to inspire patriotic fervor among the youth and masses through engaging activities. These include nationwide quiz competitions, reel-making contests, patriotic dress contests, painting contests, and essay contests to encourage creativity and national pride among citizens, inviting them to share their personal expressions of patriotism. These initiatives are designed to instill a deeper appreciation for India's rich heritage, commemorate the sacrifices of freedom fighters, and unite citizens in celebrating the spirit of independence.</p>
+
+<h2>The Indian Independence Act 1947</h2>
+<p>The Indian Independence Act 1947 was ruled on 15th August 1947 by the United Kingdom (UK) parliament. The judicial sovereignty was transmitted to the Indian Constituent Assembly. King George VI, the father of Queen Elizabeth II, continued to head the state until the transmission of the country to a complete Republican Constitutions had been finished.India struggled hard to attain the freedom from British administration under the flagship of Mahatma Gandhi, who is today recognised as the 'Father of the Nation.' </p>
+
+<h2>History of India Independence Day </h2>
+<p>India was under the control of British rule for more than 200 years. The country desperately wanted to attain the freedom from foreign rulers. </p>
+
+<p>In 1857, against the law of British East India Company, the very first crusade occurred. Later on, the campaign for India's freedom was summoned by several names, including Indian Mutiny, Revolt of 1857, Great Rebellion and India's First War of Independence.The role of Mohandas Karamchand Gandhi was crucial in attaining independence from British. He was followed by many freedom fighters across the nation. Jawaharlal Nehru became the first Prime Minister of India post-independence. </p>
+</div>
+
+<a name="his">
+<div id="top">
+<img src="images/orange.png" width="100%"></div>
+<div id="te">
+<h2>History</h2>
+<p>British rule in India began in 1757 when, following the British victory at the Battle of Plassey, the English East India Company began exercising control over the country. The East India Company ruled India for 100 years, until it was replaced by direct British rule (often referred to as the British raj) in the wake of the Indian Mutiny in 1857–58. The Indian Independence Movement began during World War I and was led by Mohandas K. Gandhi, who advocated for a peaceful and nonviolent end to British rule.</p>
+<p>European traders had established outposts in the Indian subcontinent by the late 17th century. Through overwhelming military strength, the East India Company fought and annexed local kingdoms and established themselves as the dominant force by the 18th century. Following the Indian Rebellion of 1857, the Government of India Act 1858 led the British Crown to assume direct control of India. In the decades following, civic society gradually emerged across India, most notably the Indian National Congress Party, formed in 1885.The period after World War I was marked by colonial reforms such as the Montagu–Chelmsford Reforms, but it also witnessed the enactment of the unpopular Rowlatt Act and calls for self-rule by Indian activists. The discontent of this period crystallised into nationwide non-violent movements of non-cooperation and civil disobedience, led by Mohandas Karamchand Gandhi.</p>
+During the 1930s, the reform was gradually legislated by the British; Congress won victories in the resulting elections.[8]: 195–197  The next decade was beset with political turmoil: Indian participation in World War II, the Congress' final push for non-cooperation, and an upsurge of Muslim nationalism led by the All-India Muslim League. The escalating political tension was capped by Independence in 1947. The jubilation was tempered by the bloody partition of colonial India into India and Pakistan.
+<p>Independence Day is marked throughout India with flag-raising ceremonies, drills, and the singing of the Indian national anthem. Additionally, various cultural programs are made available in the state capitals. After the prime minister participates in the flag-raising ceremony at the Red Fort historic monument in Old Delhi, a parade ensues with members of the armed forces and police. The prime minister then delivers a televised address to the country, recounting the major accomplishments of India during the previous year and outlining future challenges and goals. Kite flying has also become an Independence Day tradition, with kites of various sizes, shapes, and colours filling the sky. Also, to commemorate the day, government offices in New Delhi remain lit throughout the holiday, even though they are closed.</p>
+<br/>
+</div>
+
+
+
+<a name="free">
+<div id="top">
+<img src="images/gren.png" width="100%"></div>
+
+<div id="main">
+
+<div id="pic3"><img src="images/b2.jpg" width="100%"></div>
+<div id="text3">
+<p>Mahatma Gandhi (born October 2, 1869, Porbandar, India—died January 30, 1948, Delhi) was an Indian lawyer, politician, social activist, and writer who became the leader of the Indian Independence Movement against British rule. As such, he came to be considered the father of his country. Gandhi is internationally esteemed for his doctrine of nonviolent protest (satyagraha) to achieve political and social progress.
+
+In the eyes of millions of his fellow Indians, Gandhi was the Mahatma (“Great Soul”). The unthinking adoration of the huge crowds that gathered to see him all along the route of his tours made them a severe ordeal; he could hardly work during the day or rest at night. “The woes of the Mahatmas,” he wrote, “are known only to the Mahatmas.” His fame spread worldwide during his lifetime and only increased after his death. The name Mahatma Gandhi is now one of the most universally recognized on earth.</p>
+<p>Mahatma Gandhi stands as the cornerstone of India’s Top 10 freedom fighters, an emblematic figure in the country’s quest for independence. His leadership in championing nonviolence and civil disobedience galvanized a movement that transcended borders, leaving an indelible mark on the world.Going beyond political realms, Gandhi’s philosophy embraced social reforms and economic self-sufficiency. His teachings underscored the significance of harmony, truth, and self-discipline. His relentless endeavors to nurture communal harmony and eradicate untouchability showcased his vision of a fair and just society.Despite facing adversity, Gandhi’s unwavering commitment to nonviolence defined his stance. His influence surpassed borders, igniting movements for civil rights and social justice across the globe. Gandhi’s legacy remains a powerful testament to the transformative potential of peaceful resistance and the enduring quest for justice.
+</div>
+
+<div id="text3">
+<p>Bhagat Singh (born September 27, 1907, Lyallpur, western Punjab, India [now in Pakistan]—died March 23, 1931, Lahore [now in Pakistan]) was a revolutionary hero of the Indian independence movement.</p>
+<p>Bhagat Singh attended Dayanand Anglo Vedic High School, which was operated by Arya Samaj (a reform sect of modern Hinduism), and then National College, both located in Lahore. He began to protest British rule in India while still a youth and soon fought for national independence. He also worked as a writer and editor in Amritsar for Punjabi- and Urdu-language newspapers espousing Marxist theories. He is credited with popularizing the catchphrase “Inquilab zindabad” (“Long live the revolution”).
+In 1928 Bhagat Singh plotted with others to kill the police chief responsible for the death of Indian writer and politician Lala Lajpat Rai, one of the founders of National College, during a silent march opposing the Simon Commission. Instead, in a case of mistaken identity, junior officer J.P. Saunders was killed, and Bhagat Singh had to flee Lahore to escape the death penalty. In 1929 he and an associate lobbed a bomb at the Central Legislative Assembly in Delhi to protest the implementation of the Defence of India Act and then surrendered. He was hanged at the age of 23 for the murder of Saunders.</p>
+</div>
+<div id="pic3"><img src="images/b1.jpg" width="100%">
+</div>
+
+<div id="pic3"><img src="images/b3.jpg" width="100%"></div>
+<div id="text3">
+<p>Jawaharlal Nehru, (born Nov. 14, 1889, Allahabad, India—died May 27, 1964, New Delhi), First prime minister of independent India (1947–64). Son of the independence advocate Motilal Nehru (1861–1931), Nehru was educated at home and in Britain and became a lawyer in 1912. </p>
+<p>More interested in politics than law, he was impressed by Mohandas K. Gandhi’s approach to Indian independence. His close association with the Indian National Congress began in 1919; in 1929 he became its president, presiding over the historic Lahore session that proclaimed complete independence (rather than dominion status) as India’s political goal. He was imprisoned nine times between 1921 and 1945 for his political activity. When India was granted limited self-government in 1935, the Congress Party under Nehru refused to form coalition governments with the Muslim League in some provinces; the hardening of relations between Hindus and Muslims that followed ultimately led to the partition of India and the creation of Pakistan. Shortly before Gandhi’s assassination in 1948, Nehru became the first prime minister of independent India. He attempted a foreign policy of nonalignment during the Cold War, drawing harsh criticism if he appeared to favour either camp. During his tenure, India clashed with Pakistan over the Kashmir region and with China over the Brahmaputra River valley. He wrested Goa from the Portuguese. Domestically, he promoted democracy, socialism, secularism, and unity, adapting modern values to Indian conditions. His daughter, Indira Gandhi, became prime minister two years after his death.</p>
+</div>
+
+<div id="text3">
+Rani Laxmibai also called the Rani of Jhansi was a pivotal figure in the Indian Revolt of 1857. She is also regarded as one of the greatest freedom fighters in India.
+<p>Rani Lakshmibai was born on 19 November 1828 in the town of Varanasi. She was named Manikarnika Tambe and was nicknamed Manu. Her father was Moropant Tambe and her mother was Bhagirathi Sapre (Bhagirathi Bai); they hailed from modern-day Maharashtra. At four years old her mother passed away. Her father was the Commander of War under Peshwa Baji Rao II of Bithorr District. Rani Laxmi Bai was educated at home, able to read and write, and was more independent in her childhood than others of her age; her studies included shooting, horsemanship, and fencing which was in contrast to the cultural expectations for women in Indian society at the time.<p>
+<p>At the age of 14, she was married to the Maharaja of Jhansi, Gangadhar Rao in 1842.<br/>
+After her marriage, she was called Laxmibai.<br/>
+Rani Lakshmi Bai’s son Damodar Rao was born in 1851. But he died after four months.<br/>
+Gangadhar Rao died in 1853. Before he died, he had adopted his cousin’s son Anand Rao, who was renamed, Damodar Rao.</p>
+</div>
+<div id="pic3"><img src="images/b4.jpg" width="100%">
+</div>
+
+<div id="pic3"><img src="images/b5.jpg" width="100%"></div>
+<div id="text3">
+<p>Vallabhbhai Patel, known as Sardar Patel, (born Oct. 31, 1875, Nadiad, Gujarat, India—died Dec. 15, 1950, Bombay), Indian statesman. Educated in India, he set up his own law office in 1900 and later studied law in Britain; he did not become involved in politics until 1917. </p>
+<p>Like Mohandas K. Gandhi (and unlike Jawaharlal Nehru), he advocated dominion status within the British Commonwealth rather than independence for India. He opposed armed struggle on practical rather than moral grounds, and he was not interested in Hindu-Muslim unity. Patel was repeatedly a candidate for the presidency of the Indian National Congress, but his uncompromising attitude toward the Indian Muslims cost him Gandhi’s support and, ultimately, the presidency. After Indian independence (1947), he held several cabinet positions. He is remembered for achieving the peaceful integration of the princely Indian states into the Indian union and the political unification of India.</p>
+Broadly based political party of India, founded in 1885. The Congress Party was a moderate reform party until 1917, when it was taken over by its “extremist” Home Rule wing (see Bal Gangadhar Tilak). In the 1920s and ’30s, under Mohandas K. Gandhi, it promoted noncooperation to protest the feebleness of the constitutional reforms of 1919. During World War II, the party announced that India would not support the war until granted complete independence. In 1947 an Indian independence bill became law, and in 1950 the constitution took effect. Jawaharlal Nehru dominated the party from 1951 to 1964.
+</div>
+
+</div>
+
+<a name="con">
+<div id="top">
+<img src="images/or.png" width="100%"></div>
+
+<div id="flex">
+<div id="box"><img class="im" src="images/c1.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c2.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c3.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c4.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c5.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c6.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c7.jpg" width="100%"></div>
+<div id="box"><img class="im" src="images/c8.jpg" width="100%"></div>
+</div>
+
+
+
+
+
+
+<a name="more">
+<div id="about">
+<div id="abut">
+<div style="width:60%; margin:20px;"><img src="images/first.png" width="100%"></div>
+<div style="width:85%; margin:20px;"></div>
+
+<div style="width:60%; "><img src="images/icons.png" width="100%"></div>
+</div>
+
+
+<div id="abute">
+	<div id="ab"> 
+		<p><b> About </b></p>
+		<p>About us</p>
+		<p>Features</p>
+		<p>News</p>
+		<p>Menu</p>
+	</div>
+
+	<div id="ab"> 
+		<p><b> Company</b></p>
+		<p>Why we</p>
+		<p>Partner with us</p>
+		<p>FAQ</p>
+		<p>Blog</p>
+	</div>
+
+	<div id="ab"> 
+		<p><b> Support </b></p>
+		<p>Account</p>
+		<p>Support Center</p>
+		<p>Feedback</p>
+		<p>Contact Us</p>
+		<p>Accessablity</p>
+	</div>
+
+	<div id="ab"> 
+		<p><b> Get in touch </b></p>
+		<p>Question or Feedback ?</p>
+		<p>We'd love to hear from You</p>
+	</div>
+
+	</div>
+	<br/><br/><br/><br/><br/><br/>
+</div>
+
+<div>
+<br/><br/>
+</div>
+
+
+</body>
+
+</html>

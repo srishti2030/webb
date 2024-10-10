@@ -1,0 +1,95 @@
+body{margin:0%;}
+#bar1
+{
+    width:100%;
+    height:50px;
+    background:yellowgreen;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#logo
+{
+    width:20%;
+    height:50px;
+    background:fuchsia;
+}
+#info
+{
+    width:65%;
+    height:50px;
+    background:tan;
+}
+#icon
+{
+    width:5%;
+    height:50px;
+    background:turquoise;
+}
+#bar2
+{
+    width:100%;
+    height:50px;
+    background:darkcyan;
+}
+#barin
+{
+    width:80%;
+    margin:auto;
+    height:50px;
+    background:white;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#option
+{
+    width:13%;
+    background:coral;
+}
+#banner
+{
+    width:100%;
+    height:500px;
+    background:violet;
+}
+#about
+{
+    width:100%;
+    height:500px;
+    background:olive;
+}
+#flex
+{
+    width:80%;
+    height:500px;
+    margin:auto;
+    background:rebeccapurple;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#head
+{
+    width:100%;
+    height:70px;
+    background:red;
+}
+#text
+{
+    width:60%;
+    height:400px;
+    background:green;
+}
+#pic
+{
+    width:35%;
+    height:400px;
+    background:yellow;
+}
+#garden
+{
+    width:100%;
+    height:500px;
+    background:cyan;
+}
