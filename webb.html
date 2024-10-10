@@ -1,0 +1,1436 @@
+<!doctype html>
+<html>
+
+<head><title>LuxeRayz</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+
+a:link{color:Black; text-decoration:none}
+a:visited{color:Black; text-decoration:none}
+a:hover{text-decoration:none}
+a:active{}
+
+html{
+scroll-behavior:smooth;
+animation:opacity 3s;
+}
+
+@Keyframes opacity{
+    from{ opacity: 0%;}
+    to{opacity: 100%;}
+    }
+
+
+#bar
+{
+width:98.3%;
+height:60px;
+background:#EADBC8;
+margin-top:-10px;
+display:flex;
+position:fixed;
+z-index:5;
+}
+
+#menu
+{
+display:flex;
+width:35%;
+//height:30px;
+//background:yellow;
+//margin-left:750px;
+//margin-top:-70px;
+}
+
+#bar2
+{
+//width:19%;
+height:20px;
+//background:pink;
+color:black;
+margin:10px;
+margin-top:20px;
+cursor:pointer;
+text-align:center;
+font-size:15px;
+}
+
+
+
+*:before,
+*:after{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+
+.bar2{
+position:relative;
+text-decoration:none;
+//font-family:"poppins",sans-serif;
+color:grey;
+//font-size:20px;
+letter-spacing:0.10px;
+}
+
+#bar2:before,
+#bar2:after{
+content:"";
+position:absolute;
+height:3px;
+width:0%;
+background-color:#CCB596;
+transition:0.5s;
+}
+
+#bar2:after{
+left:0;
+bottom:-10px;
+}
+
+#bar2:before{
+right:0;
+top:-10px;
+}
+
+#bar2:hover{
+color:#ffffff
+
+}
+
+#bar2:hover:after,
+#bar2:hover:before{
+ 
+width:100%;
+}
+
+
+
+
+#logo
+{
+//background:yellow;
+width:10%;
+height:100%;
+margin-left:170px;
+}
+
+#search
+{
+width:18%;
+height:30px;
+//background:green;
+float:left;
+margin-top:11px;
+margin-left:380px;
+border-radius:10px;
+margin-right:8px;
+}
+
+#icons
+{
+width:30px;
+height:30px;
+//background:pink;
+margin-left:8px;
+margin-top:14px;
+transition:0.50s;
+}
+
+#icons:hover
+{
+//box-shadow:0px 0px 10px #EADBC8;
+transform:scale(1.10) ;
+}
+
+#space
+{
+width:100px;
+height:38px;
+//background:red;
+}
+
+#banner
+{
+width:100%;
+//height:650px;
+//background:cyan;
+//border:0.50px black solid;
+}
+
+#categ
+{
+width:75%;
+//height:180px;
+//background:green;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+//align-content:space-around;
+}
+
+#hedding
+{
+width:70%;
+height:50px;
+//background:blue;
+margin:auto;
+}
+
+#cate
+{
+width:12%;
+//height:160px;
+//background:orange;
+border-radius:50%;
+transition:0.50s;
+}
+
+#cate:hover
+{
+box-shadow:0px 0px 10px #EADBC8;
+transform:scale(1.08) ;
+}
+
+#ri
+{
+border-radius:50%;
+}
+
+#names
+{
+width:75%;
+//height:30px;
+//background:pink;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#nam
+{
+width:12%;
+//height:30px;
+//background:red;
+text-align:center;
+//font-size:20px;
+//border-radius:50%;
+transition:0.50s;
+}
+
+#nam:hover
+{
+//box-shadow:0px 0px 10px #EADBC8;
+transform:scale(1.08) ;
+}
+
+#col
+{
+width:100%;
+//height:1890px;
+//background:yellow;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#ser
+{
+width:49.8%;
+//height:945px;
+background:white;
+//border:1px black solid;
+}
+
+#card
+{
+width:80%;
+height:750px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:17%;
+height:330px;
+background:white;
+box-shadow:5px 5px 5px grey;
+transition:0.50s;
+}
+
+#crd:hover
+{
+background:#EADBC8;
+border-radius:15px;
+box-shadow:10px 10px 10px grey;
+transform:scale(1.05) ;
+}
+
+#dvimg
+{
+width:90%;
+//height:300px;
+margin:auto;
+margin-top:10px;
+}
+
+
+#text
+{
+//margin:auto;
+margin-left:10px;
+font-size:25px;
+}
+
+#special
+{
+width:80%;
+//height:550px;
+margin:auto;
+//background:yellow;
+display:flex;
+justify-content:space-between;
+}
+
+#spe
+{
+width:29%;
+//height:650px;
+//background:pink;
+}
+
+#meet
+{
+width:100%;
+//height:750px;
+//background:cyan;
+}
+
+#categ2
+{
+width:50%;
+//height:160px;
+//background:green;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+//align-content:space-around;
+}
+
+#cate2
+{
+width:16%;
+//height:155px;
+//background:orange;
+border-radius:50%;
+transition:0.50s;
+}
+
+#cate2:hover
+{
+transform:scale(1.08) ;
+}
+
+#hedding2
+{
+width:50%;
+//height:50px;
+//background:blue;
+margin:auto;
+}
+
+#hedding3
+{
+width:80%;
+//height:50px;
+//background:blue;
+margin:auto;
+}
+
+#names2
+{
+width:50%;
+//height:30px;
+//background:pink;
+margin:auto;
+margin-top:7px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#nam2
+{
+width:16%;
+//height:30px;
+//background:red;
+text-align:center;
+//border-radius:50%;
+}
+
+#speci
+{
+width:80%;
+//height:60px;
+margin:auto;
+//background:red;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#sp
+{
+margin-top:10px;
+width:30%;
+//height:50px;
+//background:green;
+text-align:center;
+font-size:35px;
+}
+
+#video
+{
+width:100%;
+height:100%;
+transition:0.50s;
+}
+
+#video:hover
+{
+box-shadow:10px 10px 10px #EADBC8;
+transform:scale(1.05) ;
+}
+
+.button
+{
+cursor:pointer;
+width:50%;
+height:40%; 
+font-size:11px;
+margin:auto;
+}
+
+.info
+{
+list-style:none;
+}
+
+
+#fec
+{
+width:80%;
+//height:250px;
+margin:auto;
+//background:yellow;
+}
+
+#feca
+{
+width:100%;
+//height:150px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#fe
+{
+width:9%;
+//height:100px;
+margin:auto;
+//background:pink;
+}
+
+#fecanam
+{
+width:100%;
+//height:50px;
+margin:auto;
+//background:red;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#fenam
+{
+width:9%;
+//height:40px;
+margin:auto;
+//background:cyan;
+text-align:center;
+}
+
+#hed
+{
+width:50%;
+margin:auto;
+text-align:center;
+//background:red;
+}
+
+#brand
+{
+width:65%;
+margin:auto;
+//height:70px;
+//background:pink;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#brn
+{
+width:20%;
+//height:70px;
+margin:auto;
+//background:cyan;
+transition:0.50s;
+}
+
+#brn:hover
+{
+//box-shadow:5px 5px 5px grey;
+transform:scale(1.08) ;
+}
+
+#about
+{
+width:100%;
+height:550px;
+background:#EADBC8;
+}
+
+#about2
+{
+width:70%;
+//height:550px;
+//background:pink;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#mor
+{
+width:21%;
+margin-top:20px;
+//height:450px;
+//background:yellow;
+text-decoration:none;
+cursor:pointer;
+}
+
+#d1
+{
+width:100%;
+//height:70px;
+//background:yellow;
+}
+
+#dvi
+{
+width:55%;
+//height:10px;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#dvid
+{
+width:20%;
+//height:10px;
+//background:red;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body
+	{background:white;}
+
+#bar
+{
+width:98.3%;
+height:40px;
+background:#EADBC8;
+margin-top:-10px;
+display:flex;
+position:fixed;
+z-index;
+}
+
+#menu
+{
+display:flex;
+width:7%;
+//height:30px;
+//background:yellow;
+//margin-left:750px;
+//margin-top:-70px;
+}
+
+#bar2
+{
+//width:19%;
+height:auto;
+background:pink;
+color:black;
+margin:1px;
+margin-top:15px;
+cursor:pointer;
+text-align:center;
+font-size:10px;
+}
+
+#logo
+{
+background:yellow;
+width:10%;
+height:100%;
+margin-left:100px;
+}
+
+#search
+{
+width:18%;
+height:30px;
+background:green;
+float:left;
+margin-top:15px;
+margin-left:380px;
+border-radius:10px;
+margin-right:8px;
+}
+
+#icons
+{
+width:30px;
+height:30px;
+//background:pink;
+margin-left:8px;
+margin-top:19px;
+}
+
+#card
+{
+width:80%;
+height:1370px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:47%;
+height:260px;
+background:white;
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:170px;
+margin:auto;
+margin-top:5px;
+}
+
+#text
+{
+font-size:17px;
+text-align:center;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body
+	{background:white;}
+#card
+{
+width:80%;
+height:2000px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:47%;
+height:380px;
+background:white;
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:220px;
+margin:auto;
+margin-top:9px;
+}
+
+#text
+{
+font-size:21.5px;
+text-align:right;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body
+	{background:white;}
+
+#bar
+{
+width:98.3%;
+height:40px;
+background:#EADBC8;
+margin-top:-10px;
+display:flex;
+position:fixed;
+z-index;
+}
+
+#menu
+{
+display:flex;
+width:7%;
+//height:30px;
+//background:yellow;
+//margin-left:750px;
+//margin-top:-70px;
+}
+
+#bar2
+{
+//width:19%;
+height:auto;
+//background:pink;
+color:black;
+margin:3px;
+margin-top:15px;
+cursor:pointer;
+text-align:center;
+font-size:11px;
+}
+
+#logo
+{
+//background:yellow;
+width:25%;
+height:100%;
+margin-left:220px;
+}
+
+#search
+{
+width:22%;
+height:15px;
+float:left;
+margin-top:10px;
+margin-left:100px;
+border-radius:3px;
+margin-right:8px;
+}
+
+#icons
+{
+width:4%;
+height:18px;
+//background:pink;
+margin-left:8px;
+margin-top:10px;
+}
+
+#card
+{
+width:80%;
+height:2350px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:48%;
+height:450px;
+background:white;
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:270px;
+margin:auto;
+margin-top:8px;
+}
+
+#text
+{
+font-size:28px;
+text-align:right;
+}
+
+.info
+{
+list-style:none;
+}
+
+
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+	body
+	{background:white;}
+
+#bar
+{
+width:98.3%;
+height:48px;
+background:#EADBC8;
+margin-top:-10px;
+display:flex;
+position:fixed;
+z-index;
+}
+
+#menu
+{
+display:flex;
+width:7%;
+//height:30px;
+//background:yellow;
+//margin-left:750px;
+//margin-top:-70px;
+}
+
+#bar2
+{
+//width:19%;
+height:12px;
+//background:pink;
+color:black;
+margin:9px;
+margin-top:17px;
+cursor:pointer;
+text-align:center;
+font-size:11px;
+}
+
+#logo
+{
+//background:yellow;
+width:16%;
+height:100%;
+margin-left:365px;
+}
+
+#search
+{
+width:18%;
+height:18px;
+float:left;
+margin-top:12px;
+margin-left:130px;
+border-radius:3px;
+margin-right:9px;
+}
+
+#icons
+{
+width:2%;
+height:20px;
+//background:pink;
+margin-left:9px;
+margin-top:14px;
+}
+
+#cate
+{
+width:12%;
+height:95px;
+//background:orange;
+border-radius:50%;
+transition:0.50s;
+}
+
+#card
+{
+width:80%;
+height:540px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:19%;
+height:260px;
+background:white;
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:180px;
+margin:auto;
+margin-top:8px;
+}
+
+#text
+{
+font-size:18px;
+text-align:right;
+}
+
+.info
+{
+list-style:none;
+}
+
+.button
+{
+cursor:pointer;
+width:20%;
+height:15%; 
+font-size:11px;
+}
+
+#about
+{
+width:100%;
+height:600px;
+background:#EADBC8;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body
+	{background:white;}
+
+#bar
+{
+width:98.3%;
+height:70px;
+background:#EADBC8;
+margin-top:-10px;
+display:flex;
+position:fixed;
+z-index;
+}
+
+#menu
+{
+display:flex;
+width:35%;
+//height:30px;
+//background:yellow;
+//margin-left:750px;
+//margin-top:-70px;
+}
+
+#bar2
+{
+//width:19%;
+height:20px;
+//background:pink;
+color:black;
+margin:10px;
+margin-top:25px;
+cursor:pointer;
+text-align:center;
+font-size:15px;
+}
+
+#logo
+{
+//background:yellow;
+width:10%;
+height:100%;
+margin-left:170px;
+}
+
+#search
+{
+width:18%;
+height:30px;
+background:green;
+float:left;
+margin-top:15px;
+margin-left:380px;
+border-radius:10px;
+margin-right:8px;
+}
+
+#icons
+{
+width:30px;
+height:30px;
+//background:pink;
+margin-left:8px;
+margin-top:19px;
+}
+
+#cate
+{
+width:12%;
+height:165px;
+//background:orange;
+border-radius:50%;
+transition:0.50s;
+}
+
+#card
+{
+width:80%;
+height:860px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:17%;
+height:380px;
+background:white;
+}
+
+#dvimg
+{
+width:90%;
+//height:250px;
+margin-top:10px;
+}
+
+#text
+{
+font-size:23px;
+text-align:right;
+}
+
+.info
+{
+list-style:none;
+}
+
+
+}
+
+
+</style>
+
+<body>
+
+<div id="bar">
+
+<div id="menu">
+<div id="bar2" class="bar2"><a href="webb.html">HOME</div> </a>
+<div id="bar2" class="bar2"><a href="cate.html">CATEGORES</div> </a>
+<div id="bar2" class="bar2"><a href="occa.html">OCCASIONS</div> </a>
+<div id="bar2" class="bar2"><a href="spec.html">SPECIALS</div> </a>
+<div id="bar2" class="bar2"><a href="#more">MORE</div> </a>
+</div>
+
+<div id="logo"><img src="images/lg.png" width="100%" height="100%">
+</div>
+
+<div id="search">
+<input type="text" placeholder="Search" style="width:100%; height:100%; border-radius:10px;">
+</div>
+
+<div id="icons"><a href="notify.html"><img src="images/ic1.png" width="90%" height="90%"></div></a>
+<div id="icons"><a href="wishlist.html"><img src="images/ic2.png" width="100%" height="100%"></div></a>
+<div id="icons"><a href="form.html"><img src="images/ic3.png" width="100%" height="100%"></div></a>
+
+</div>
+
+
+<div id="space"></div>
+
+
+<div id="banner">
+<img src="images/banner-main.jpg" width="100%" height="100%">
+</div>
+
+
+<div id="hedding">
+<h1> Categories </h1>
+</div>
+
+<div id="categ">
+<div id="cate"><a href="cate-card1.html"><img id="ri" src="images/ring-m.jpg" width="100%" height="100%"></div></a>
+<div id="cate"><a href="cate-card2.html"><img id="ri" src="images/neck-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate"><a href="cate-card3.html"><img id="ri" src="images/ear-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate"><a href="cate-card4.html"><img id="ri" src="images/wat-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate"><a href="cate-card5.html"><img id="ri" src="images/hair-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate"><a href="cate-card6.html"><img id="ri" src="images/bag-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate"><a href="cate-card7.html"><img id="ri" src="images/barc-m.jpeg" width="100%" height="100%"></div></a>
+</div>
+
+<div id="names">
+
+<div id="nam"><a href="cate-card1.html"> Rings</div> </a>
+<div id="nam"><a href="cate-card2.html"> Neck Pieces</div> </a>
+<div id="nam"><a href="cate-card3.html"> Earrings</div> </a>
+<div id="nam"><a href="cate-card4.html"> Watches</div> </a>
+<div id="nam"><a href="cate-card5.html"> Hair Accessories</div> </a>
+<div id="nam"><a href="cate-card6.html"> Bags</div> </a>
+<div id="nam"><a href="cate-card7.html"> Braclates</div> </a>
+
+</div>
+
+<br/>
+
+<div id="col">
+<div id="ser" style="background:cyan;"><a href="cate-card2.html"><img src="images/rg.jpeg" width="100%" height="100%"></div></a>
+<div id="ser"><a href="cate-card2.html"><img src="images/bor1.png" width="100%" height="100%"></div></a>
+<div id="ser"><a href="cate-card3.html"><img src="images/bor2.png" width="100%" height="100%"></div></a>
+<div id="ser" style="background:cyan;"><a href="cate-card3.html"><img src="images/wg.jpeg" width="100%" height="100%"></div></a>
+</div>
+
+
+
+<div id="hedding2">
+<h1> Shop by Occasions </h1>
+</div>
+
+
+<div id="categ2">
+<div id="cate2"><a href="cos1.html"><img id="ri" src="images/ct-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate2"><a href="cos2.html"><img id="ri" src="images/sg-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate2"><a href="cos3.html"><img id="ri" src="images/bm-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate2"><a href="cos4.html"><img id="ri" src="images/mh-m.jpeg" width="100%" height="100%"></div></a>
+<div id="cate2"><a href="cos5.html"><img id="ri" src="images/re-m.jpeg" width="100%" height="100%"></div></a>
+</div>
+
+<div id="names2">
+<div id="nam2"><a href="cos1.html">Cockails</div> </a>
+<div id="nam2"><a href="cos2.html">Sangeet</div> </a>
+<div id="nam2"><a href="cos3.html">Bridemaid</div> </a>
+<div id="nam2"><a href="cos4.html">Mehendi</div> </a>
+<div id="nam2"><a href="cos5.html">Reception</div> </a>
+</div>
+
+
+<div id="hedding3">
+<h1> Find Perfect For You </h1>
+</div>
+
+<div id="card">
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel1.jpeg" width="100%" height="100%"></div>
+<b id="text">Snake Braclate</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel2.jpeg" width="100%" height="100%"></div>
+<b id="text">Long Earstuds</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+<br/>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel3.jpeg" width="100%" height="100%"></div>
+<b id="text">Stone Braclate</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel4.jpeg" width="100%" height="100%"></div>
+<b id="text">Floral pendent</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel5.jpeg" width="100%" height="100%"></div>
+<b id="text">Pearl Neckpiece</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel6.jpeg" width="100%" height="100%"></div>
+<b id="text">Pearl Earstuds</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel7.jpeg" width="100%" height="100%"></div>
+<b id="text">Ring Braclate</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel8.jpeg" width="100%" height="100%"></div>
+<b id="text">Pearl Hairband</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel9.jpeg" width="100%" height="100%"></div>
+<b id="text">Redrose Clawclip</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/jwel10.jpeg" width="100%" height="100%"></div>
+<b id="text">Ribbon Earrings</b>
+<ol class="info">
+<li><button style="cursor:pointer; width:45%; height:40%; font-size:9px; margin-left:-15px;"> Wishlist</button>
+<button style="cursor:pointer; width:45%; height:40%; font-size:9px;"><a href="buy.html">Buy Now</button></li>
+</ol>
+</div>
+<!-- ********************************************************-->
+
+</div>
+
+
+
+<div id="hedding3">
+<h1>Our Specials</h1>
+</div>
+
+<br/>
+
+
+<div id="special">
+
+<div id="spe">
+<a href="cate-card1.html">
+<video id="video" autoplay loop muted  width="100%" height="100%">
+<source src="images/jwe.mp4" type="video/mp4" />
+Your browser does not support video
+</video>
+</div></a>
+
+<div id="spe">
+<a href="cate-card1.html">
+<video id="video" autoplay loop muted width="100%" height="100%">
+<source src="images/ear.mp4" type="video/mp4" />
+Your browser does not support video
+</video>
+</div></a>
+
+<div id="spe">
+<a href="cate-card1.html">
+<video id="video" autoplay loop muted width="100%" height="100%">
+<source src="images/pearl.mp4" type="video/mp4" />
+Your browser does not support video
+</video>
+</div></a>
+
+</div>
+
+<div id="speci">
+<div id="sp"><a href="cate-card1.html">New Arrivals</div></a>
+<div id="sp"><a href="cate-card6.html">Most Popular</div></a>
+<div id="sp"><a href="cate-card4.html">Limited Addition</div></a>
+</div>
+
+<div id="meet">
+<img src="images/meet.png" width="100%" height="100%">
+</div>
+
+<div id="fec">
+
+<div id="feca">
+<div id="fe"> <img src="images/i1.png" width="100%"> </div>
+<div id="fe"> <img src="images/i2.png" width="100%"></div>
+<div id="fe"> <img src="images/i3.png" width="100%"></div>
+<div id="fe"> <img src="images/i4.png" width="100%"></div>
+<div id="fe"> <img src="images/i5.png" width="100%"></div>
+<div id="fe"> <img src="images/i6.png" width="100%"></div>
+</div>
+
+<div id="fecanam">
+<div id="fenam">10+ Years <br/>Legacy </div>
+<div id="fenam">Trusted <br/> Product</div>
+<div id="fenam">Hassle Free Replacement </div>
+<div id="fenam">Assured <br/> Warranty </div>
+<div id="fenam">Fast & Free <br/> Delivery</div>
+<div id="fenam">Quick <br/> Support </div>
+</div>
+
+</div>
+
+<br/>
+
+<div id="hed">
+<h2>LEADING BRAND ON MARKETPLACES</h2>
+</div>
+
+<div id="brand">
+<div id="brn"><img src="images/br1.jpg" width="100%"></div>
+<div id="brn"><img src="images/br2.jpg" width="100%"></div>
+<div id="brn"><img src="images/br3.jpg" width="100%"></div>
+<div id="brn"><img src="images/br4.jpg" width="100%"></div>
+</div>
+
+<br/>
+
+<a name="more">
+<div id="about">
+
+<div id="about2">
+<div id="mor">
+
+<p><b> HELP </b></p>
+<p>FAQs</p>
+<p>Order Status</p>
+<p>Raise a Reaturn Request</p>
+<p>Terms & Policy</p>
+<p>Privacy Policy</p>
+<p>Shipping Policy</p>
+<p>Return Policy</p>
+<p>Cancellation Policy</p>
+
+
+<div id="dvi">
+<div id="dvid"><img src="images/icn1.png" width="100%"></div>
+<div id="dvid"><img src="images/icn2.png" width="100%"></div>
+<div id="dvid"><img src="images/icn3.png" width="100%"></div>
+</div>
+
+
+</div>
+
+<div id="mor">
+<p><b> INFORMATION </B></p>
+<p>About Us</p>
+<p>Track Your Order</p>
+<p>Contact Us</p>
+<p>Blog</p>
+<p>Product Care Tips</p>
+</div>
+
+<div id="mor">
+<p><b> TOP CATEGORIES </b></p>
+<p>Rings</p>
+<p>Neck Pieces</p>
+<p>Earrings</p>
+<p>Watches</p>
+<p>Hair Accessories</p>
+<p>Braclates</p>
+<p>All Products</p>
+</div>
+
+<div id="mor">
+<p><b> GET IN TOUCH </b></p>
+<p>LuxeRayz Pvt. Ltd,
+<br/>
+Vaishnavi Properties,#35/5, Silicon Terraces,5th
+and 6th Floor, Adugodi,, Hosur Main Road,
+Shahdara, Delhi-110032</p>
+
+<b>For queries and feedback, write to us at:</b>
+Email:srishtiaggarwal170@gmail.com
+Phone:+91 1112223334
+
+<p><b> Opening Hours:</b>
+Monday to Saturday: 10am to 7pm
+Sunday:Holiday</p>
+
+<p><b> Subscribe to Newsletter</b></p>
+<br/>
+<h3><p> Enter your email:</p></h3>
+<hr/>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
