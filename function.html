@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#bar
+{
+width:100%;
+height:50px;
+margin:auto;
+//background:pink;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#logo
+{
+width:10%;
+//height:50px;
+//margin:auto;
+//background:cyan;
+}
+
+#home
+{
+width:40%;
+height:50px;
+//margin:auto;
+//background:purple;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#bar2
+{
+//width:19%;
+//height:20px;
+//background:cyan;
+//margin:8px;
+margin-top:23px;
+cursor:pointer;
+text-align:center;
+font-size:15px;
+}
+
+#main
+{
+width:75%;
+//height:300px;
+margin:auto;
+margin-top:5%;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#pic
+{
+width:30%;
+//height:300px;
+//background:yellow;
+}
+
+#txt
+{
+width:55%;
+//height:300px;
+//margin:auto;
+//background:red;
+text-align:right;
+//margin-top:60px;
+color:white;
+}
+
+
+*:before,
+*:after{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+
+a{
+position:relative;
+text-decoration:none;
+//font-family:"poppins",sans-serif;
+color:grey;
+//font-size:20px;
+letter-spacing:0.10px;
+}
+
+a:before,
+a:after{
+content:"";
+position:absolute;
+height:3px;
+width:0%;
+background-color:#D3A96A;
+transition:0.5s;
+}
+
+a:after{
+left:0;
+bottom:-10px;
+}
+
+a:before{
+right:0;
+top:-10px;
+}
+
+a:hover{
+color:#ffffff
+
+}
+
+a:hover:after,
+a:hover:before{
+ 
+width:100%;
+}
+
+</style>
+
+
+<body style="background:#0c1f21;">
+    
+
+    <div id="bar">
+    <div id="logo"><img src="images/jslogo.png" width="100%"> </div>
+    <div id="home">
+	<div id="bar2"><a href="#">HOME</div> </a>
+	<div id="bar2"><a href="#">ABOUT</div> </a>
+	<div id="bar2"><a href="#">ORDER</div> </a>
+	<div id="bar2"><a href="#">CONTACT</div> </a>
+	<div id="bar2"><a href="#">MORE</div> </a>
+
+    </div>
+    </div>
+
+    <div id="main">
+    <div id="pic"> <img src="images/fd2.png" width="100%">  </div>
+
+    <div id="txt"> <h1> North indian food</h1>
+    <p>Many of us are foodies on the Wanderlog team, so naturally we’re always on the hunt to eat at the most popular spots anytime we travel somewhere new. With favorites like Hoshiyarpuri, Big Ben Restaurant, and Dosa Plaza Punjabi Tadka Restaurant and more, get ready to experience the best flavors around Haridwar.</p>
+        <p>We scoured through the internet and read through 5 reputable sites and blogs like India Chronicles and Lonely Planet. We gathered all the results in one place and ranked them by how many times they were mentioned so you know you're getting the best of the best. Just look for the "mentioned by" tags on each place like these: </p>
+</div>
+    </div>
+
+    <br/><br/>
+
+    <script>
+        document.body.style.backgroundColor="#0C1F21";
+        
+    var p = document.createElementById("pic")
+
+    document.titel = function
+
+
+    p.onclick = function()
+    {
+     this.style.transfome=rotate("360deg")
+     this.src="images/fd1.png"
+    }
+
+
+     
+    </script>
+
+</body>
+</html>

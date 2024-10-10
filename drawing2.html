@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+</head>
+
+<style>
+body{margin:0%}
+</style>
+
+<body>
+
+    <input type="color" id="colorbox">
+    <canvas id="mycan"></canvas>
+
+    <script>
+
+        var can = document.getElementById("mycan")
+        var scolor = document.getElementById("colorbox")
+        var w = window.innerWidth
+        var h = window.innerHeight
+        can.width = w
+        can.height = h
+        var r,g,b,drawcolor
+        drawcolor = "red"
+        var randomc = false
+        var brushsize = 10
+
+        const c = can.getContext("2d");
+        //can.style.background="cyan"
+    c.fillStyle ="red"
+        
+
+        function draw(e)
+        {
+            r = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+            b = Math.round(Math.random()*255)
+              mycolor = "rgb("+r+","+g+","+b+")"
+
+            document.title= "x = "+e.pageX+ " y = "+e.pageY
+            c.beginPath();
+                c.arc(e.pageX, e.pageY, brushsize, 0, 2 * Math.PI);
+
+                if(randomc)
+                {
+                    c.fillStyle = mycolor
+                }
+                else(randomc)
+                {
+                    c.fillStyle = drawcolor
+                }
+                
+                c.fill()
+
+        }
+
+    scolor.onchange = function()
+    {
+        drawcolor = this.value
+    }
+
+
+    function check(e)
+    {
+        alert(e.keyCode)
+        if((e.keycode==82)&&(randomc == false))
+        {
+            randomc = true
+        }
+        if((e.keycode==69)&&(randomc == true))
+        {
+            randomc = false
+        }
+
+        if(e.keycode==107)
+        {
+            brushsize+=2
+        }
+        if(e.keycode==109)
+        {
+            brushsize-=2
+        }
+    }
+
+
+        document.addEventListener("mousemove",draw)
+        document.addEventListener("keydown",draw)
+
+        document.title = "ready"
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    #card
+    {
+        width:80%;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+align-content:space-around;
+        //margin-top:50px;
+    }
+
+    .card
+{
+width:17%;
+//height:500px;
+//box-shadow:10px 10px 10px gray;
+text-align:center;
+}
+
+    .pic
+{
+width:100%;
+//height:350px;
+margin:2px;
+//border-radius:5%;
+cursor:pointer;
+transition:0.50s;
+
+}
+
+.pic:hover
+{
+transform:scale(1.06);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+
+.info
+{
+margin-left:30%;
+list-style:none;
+padding:0px;
+text-align:left;
+}
+</style>
+<body>
+   <br/><br/> 
+    <script>
+var p = document.createElement("img")
+document.body.appendChild(p)
+p.src="images/lg.png"
+p.style = "opacity:0.70;transition:0.50s;coursor:zoom-in;margin:auto;display:block;margin-top:20px; width:400px;"
+
+var r = 0
+p.onwheel = function(event)
+{
+r = Math.round(event.deltaY)
+
+
+if((event.deltaY == 108)||(r == 100))
+{
+    this.style.transform="scale(1.50)"
+    this.style.opacity="1"
+}
+
+if((event.deltaY == -108)||(r == -100))
+{
+    this.style.transform="scale(1)"
+    this.style.opacity="0.70"
+}
+
+}
+
+    </script>
+    <div id="card">
+        <div class="card"><img src="images/ct1.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct2.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct3.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct4.jpeg"class="pic">
+            
+            </div>
+            
+            
+            <div class="card"><img src="images/ct5.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct6.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct7.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct8.jpeg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="images/ct9.jpeg"class="pic">
+            
+            </div>
+            
+            
+            <div class="card"><img src="images/ct10.jpeg"class="pic">
+            
+            </div>  
+      </div>
+        </body>
+    
+</body>
+</html>

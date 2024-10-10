@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head><title>Banner</title>
+</head>
+
+<style>
+
+#mask
+{
+  width:80% ;
+  background:pink;
+  margin:auto;
+}
+
+#mask img
+{
+    width:80%;
+    position:absolute;
+    transition:1.50s;
+}
+</style>
+
+<body  onLoad="runbanner()">
+<div id="mask">
+    <img id="p1" src="images/bn1.jpg">
+    <img id="p2" src="images/bn2.jpg">
+    <img id="p3" src="images/bn3.jpg">
+    <img id="p4" src="images/bn4.jpg">
+    <img id="p5" src="images/bn5.jpg">
+</div>
+
+<script>
+var bm1 = document.getElementById("p1")
+var bm2 = document.getElementById("p2")
+var bm3 = document.getElementById("p3")
+var bm4 = document.getElementById("p4")
+var bm5 = document.getElementById("p5")
+var c = 0
+
+function runbanner()
+{
+    document.title = c
+
+    switch(c)
+    {
+        case 1:
+        p5.style.opacity = "0"
+        p5.style.transform = "scale(0) rotate(360deg)" 
+        break;
+
+        case 2:
+        p4.style.opacity = "0"
+        p4.style.transform = "scale(0) rotate(360deg)"
+        break;
+
+        case 3:
+        p3.style.opacity = "0"
+        p3.style.transform = "scale(0) rotate(360deg)"
+        break;
+
+        case 4:
+        p2.style.opacity = "0"
+        p2.style.transform = "scale(0) rotate(360deg)"
+        break;
+
+        case 5:
+        break;
+
+        case 6:
+            p5.style.opacity = "1" ; p5.style.transform = "scale(1) rotate(0)"
+            p4.style.opacity = "1" ; p4.style.transform = "scale(1) rotate(0)"
+            p3.style.opacity = "1" ; p3.style.transform = "scale(1) rotate(0)"
+            p2.style.opacity = "1" ; p2.style.transform = "scale(1) rotate(0)"
+            p1.style.opacity = "1" ; p1.style.transform = "scale(1) rotate(0)"
+        break;
+    }
+
+    if(c<=5)
+    {
+        c++
+    }
+    else
+    {
+        c = 0
+    }
+
+setTimeout("runbanner(0)",1000)
+}
+</script>
+
+</body>
+</html>

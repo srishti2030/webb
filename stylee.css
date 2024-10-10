@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4d4145;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex;
+    margin-top: 0;
+    position: relative;
+    top: -50px;
+}
+
+.key {
+    height: calc(var(--width)*4);
+    width: var(--width);
+}
+
+.white {
+    --width: 70px;
+    background-image: linear-gradient(#e7e6c9,#ffffff);
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-sadow: 0px 0px 30px  rgb(255, 231, 180);
+    transition: 200ms;
+}
+
+.black {
+    --width: 45px;
+    background-image: linear-gradient(#434343,#000000);
+    border: 1px solid #333;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index: 2;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.white.active {
+    background-image: linear-gradient(#ffffff,#e7e6c9);
+    box-sadow: 0 0 10px 10px  rgb(169, 218, 255);
+}
+
+.black.active {
+    background-image: linear-gradient(#000000,#434343);
+    box-sadow: 0 0 10px 10px rgb(169, 218, 255);
+}
+
+h3 {
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+.piano .key:hover {
+    background-color: rgb(140, 101, 230);
+    box-shaow: 0 0 10px 10px rgb(169, 218, 255);
+}
+
+.key.black {
+    color: white;
+    text-align: center;
+}
+
+.key.white p {
+    position: relative;
+    top: 60%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.key.white h3 {
+    top: 60%;
+    font-size: x-large;
+}
+
+.key.black p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+body h1 {
+    flex: 0 0 100%;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 0 0 black;
+}
