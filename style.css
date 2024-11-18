@@ -13,7 +13,7 @@ a:active{}
 {
     width:100%;
     heigt:50px;
-    backround:red;
+    bacground:red;
     backdrop-filter:blur(10px);
     display:flex;
     flex-wrap:wrap;
@@ -30,7 +30,7 @@ a:active{}
 #nave
 {
     width:25%;
-    backgrund:green;
+    bacground:green;
     margin-right:12%;
     display:flex;
     flex-wrap:wrap;
@@ -39,7 +39,7 @@ a:active{}
 #nave2
 {
     width:25%;
-    backgrond:pink;
+    bacground:pink;
     margin-left:15%;
     display:flex;
     flex-wrap:wrap;
@@ -48,7 +48,7 @@ a:active{}
 #top
 {
     width:30%;
-    backgroud:orange;
+    bacground:orange;
     heigt:26%;
     margin-top:6%;
     color:white;
@@ -57,8 +57,8 @@ a:active{}
 }
 #logo
 {
-    width:12%;
-    backgrund:teal;
+    width:10%;
+    bacground:teal;
 }
 .bo
 {
