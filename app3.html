@@ -71,7 +71,7 @@ a:active{}
 #dow
 {
     width: 9%;
-    background-color: #96D7ED;
+    background-color: #F8EFE6;
     position: absolute;
     z-index: 3;
     top: 65%;
@@ -93,7 +93,7 @@ a:active{}
 #dow2
 {
     width: 9%;
-    background-color: #96D7ED;
+    background-color: #F8EFE6;
     position: absolute;
     z-index: 3;
     top: 95%;
@@ -133,21 +133,112 @@ a:active{}
     brder: 1px solid #976635;
 }
 
+#vid2
+{
+    width: 40%;
+    height: 700px;
+    backgrund-color: #359766;
+    brder: 1px solid #976635;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    line-height: 22px;
+    font-size: 19px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    #dow
+{
+    width: 9%;
+    background-color: #F8EFE6;
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 85%;
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow2
+{
+    width: 9%;
+    background-color: #F8EFE6;
+    position: absolute;
+    z-index: 3;
+    top: 95%;
+    left: 89%;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#about
+{
+    width: 90%;
+    heigt: 500px;
+    backround-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 565%;
+    left: 5%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    boder: 1px black solid;
+}
+#vid
+{
+    width: 40%;
+    heght: 700px;
+    backgrund-color: #359766;
+    boder: 1px solid #976635;
+    
+}
+
+#vid2
+{
+    width: 60%;
+    heigt: 700px;
+    backgrund-color: #359766;
+    brder: 1px solid #976635;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    line-height: 23px;
+    font-size: 19px;
+}
+}
 </style>
 
 <body>
     
     <div id="main">
-        <img src="images/rr2.jpg" width="100%">
+        <img src="images/rr.jpg" width="100%">
     </div>
 
-    <a htef="imagesPianoParadise_1_1.0.apk"><div id="dow"> Download </div></a>
+    <a htef="images/Solution_1_1.0.apk"><div id="dow"> Download </div></a>
 
     <div id="about">
         <div id="vid" style="width:30%;">
-            
+            <video id="video" width="100%"  autoplay loop muted>
+                <source src="images/phone 1.mp4" type="video/mp4" />
+                Your browser does not support video
+                </video>
+                
         </div>
-        <div  id="vid" style="width:40%; box-sizing: border-box; padding: 30px;  padding-top: 0px; line-height: 22px; font-size: 21px; ">
+        <div  id="vid2">
             <h1>About App</h1>
             <p><b>Soulution</b> is a calculator mobile app which is designed to perform essential mathematical operations, making it an efficient tool for everyday calculations. It includes features for calculating percentages, squares, cubes, square roots, and cube roots.</p> <p>Users can easily calculate percentages by inputting the base value and the percentage, allowing them to quickly determine amounts, discounts, or taxes. The square and cube functions return the result of raising a number to the power of 2 or 3, respectively, providing solutions for geometry, algebra, or other practical applications. </p> <p>The square root and cube root functions enable users to find the root of any non-negative number, helping with problems in statistics, physics, and engineering. The app's interface is designed for quick, intuitive access to these core functions, making it ideal for students, professionals, and anyone needing fast and accurate calculations on the go.</p>
 
@@ -161,7 +252,7 @@ a:active{}
                 <li><b>Cube Root Calculation (³√X)</b></li>
             </ol>
 
-            <a htef="imagesPianoParadise_1_1.0.apk"><div id="dow"> Download </div></a>
+            <a htef="images/Solution_1_1.0.apk"><div id="dow"> Download </div></a>
         </div>
     </div>
 
