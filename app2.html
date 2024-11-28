@@ -114,7 +114,6 @@ a:active{}
 #about
 {
     width: 90%;
-    height: 700px;
     backgrund-color: #976635;
     position: absolute;
     z-index: 3; 
@@ -128,7 +127,6 @@ a:active{}
 #vid
 {
     width: 40%;
-    height: 700px;
     backgrund-color: #359766;
     brder: 1px solid #976635;
 }
@@ -136,7 +134,6 @@ a:active{}
 #vid2
 {
     width: 40%;
-    height: 700px;
     backgrund-color: #359766;
     brder: 1px solid #976635;
     box-sizing: border-box;
@@ -145,6 +142,12 @@ a:active{}
     line-height: 22px;
     font-size: 19px;
 }
+
+#video
+{
+    border-radius: 55px;
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
@@ -220,6 +223,154 @@ a:active{}
     font-size: 19px;
 }
 }
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    #main
+{
+    width:100%;
+}
+#bar
+{
+    width:100%;
+    heigt:50px;
+    backround:red;
+    backdrop-filter:blur(10px);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    position:fixed;
+    z-index:2;
+}
+#logo
+{
+    width:19%;
+    backgrund:teal;
+    margin: auto;
+}
+.first
+{
+    width: 90%;
+    heght: 200px;
+    bacground-color: aqua;
+    margin: auto;
+    margin-top: 150px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#lgo
+{
+    width: 18%;
+    heght: 200px;
+    bacground-color: yellowgreen; 
+}
+#info
+{
+    width: 75%;
+    heght: 200px;
+    bacground-color: rgb(219, 206, 108); 
+}
+#load
+{
+    width: 10%;
+    padding: 12px 25px;
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+#dow
+{
+    width: 9%;
+    background-color: #96D7ED;
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    left: 85%;
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow:hover
+{
+    transform:scale(1.10) ;
+}
+
+#dow2
+{
+    width: 9%;
+    background-color: #96D7ED;
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 88%;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow2:hover
+{
+    transform:scale(1.10) ;
+}
+#about
+{
+    width: 80%;
+    backround-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 505%;
+    left: 10%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#vid
+{
+    width: 40%;
+    backround-color: #359766;
+    brder: 1px solid #976635;
+}
+
+#vid2
+{
+    width: 40%;
+    backround-color: #359766;
+    brder: 1px solid #976635;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    line-height: 22px;
+    font-size: 19px;
+}
+
+#video
+{
+    border-radius: 55px;
+}
+#head
+{
+    text-align: right;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+    margin-top: 53%;
+}
+}
+
 </style>
 
 <body>
@@ -231,23 +382,16 @@ a:active{}
     <a htef="images/Solution_1_1.0.apk"><div id="dow"> Download </div></a>
 
     <div id="about">
-        <div id="vid" style="width:30%;">
-            <video id="video" width="100%"  autoplay loop muted>
-                <source src="images/phone 1.mp4" type="video/mp4" />
+        <div id="vid" style="width:23%;">
+            <video id="video" width="100%" controls muted>
+                <source src="images/phone 2.mp4" type="video/mp4" />
                 Your browser does not support video
                 </video>
                 
         </div>
         <div  id="vid2">
-            <h1>About App</h1>
-            <p><b>Welcome to MathsMate – The Ultimate Math Tables Learning App!</b> Are you looking for a fun, interactive, and engaging way to master your multiplication tables? Look no further! TableMaster is designed to make learning math tables exciting and easy, whether you're a beginner or someone looking to perfect your multiplication skills. With our user-friendly interface and innovative features, mastering the multiplication tables has never been so simple—and enjoyable!</p> 
-            
-            <p><b>Two Beautiful Interfaces: Pink and Blue</b></p>
-            <p>We understand that every learner is unique, and that's why TableMaster offers not one, but two vibrant themes to choose from—Pink and Blue! Whether you're a girl who loves the soft, inviting hues of pink or a boy who prefers the cool, calming shades of blue, you can personalize your learning experience right from the start. Each theme is thoughtfully designed to make your time with the app feel more comfortable and motivating. But it’s not just about colors—both interfaces are built with ease of use and clarity in mind, ensuring that students of all ages can navigate the app without any hassle. </p> 
-
-            
-
-            <a htef="images/Solution_1_1.0.apk"><div id="dow"> Download </div></a>
+            <h1 id="head">Click here and download the app now</h1>
+            <a htef="images/Solution_1_1.0.apk"><div id="dow2"> Download </div></a>
         </div>
     </div>
 
