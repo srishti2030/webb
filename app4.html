@@ -17,9 +17,6 @@ a:active{}
  #main
 {
     width:100%;
-    background-image: linear-gradient(#BAA7E7,#DACFEF,#E5DAFC);
-    position:fixed;
-    z-index:-3;
 }
 #bar
 {
@@ -66,32 +63,347 @@ a:active{}
 {
     width: 10%;
     padding: 12px 25px;
-    background: rgb(255, 255, 255);
+    background: black;
     text-align: center;
     border-radius: 10px;
+    color: white;
 }
+#dow
+{
+    width: 9%;
+    background-color: #FFF1DA;
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    left: 85%;
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow:hover
+{
+    transform:scale(1.10) ;
+}
+
+#dow2
+{
+    width: 9%;
+    background-color: #FFF1DA;
+    position: absolute;
+    z-index: 3;
+    top: 85%;
+    left: 89%;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow2:hover
+{
+    transform:scale(1.10) ;
+}
+#about
+{
+    width: 90%;
+    backgrund-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 515%;
+    left: 5%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#vid
+{
+    width: 30%;
+    heght: 700px;
+    backgrund-color: #359766;
+    brder: 1px solid #976635;
+}
+
+#vid2
+{
+    width: 50%;
+    backgrund-color: #359766;
+    brder: 1px solid #976635;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    line-height: 22px;
+    font-size: 19px;
+}
+#video
+{
+    border-radius: 55px;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    #dow
+{
+    width: 9%;
+    background-color: #96D7ED;
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 85%;
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow2
+{
+    width: 9%;
+    background-color: #96D7ED;
+    position: absolute;
+    z-index: 3;
+    top: 98%;
+    left: 89%;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#about
+{
+    width: 90%;
+    heigt: 500px;
+    backround-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 565%;
+    left: 5%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    boder: 1px black solid;
+}
+#vid
+{
+    width: 40%;
+    heght: 700px;
+    backgrund-color: #359766;
+    boder: 1px solid #976635;
+    
+}
+
+#vid2
+{
+    width: 60%;
+    heigt: 700px;
+    backgrund-color: #359766;
+    brder: 1px solid #976635;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    line-height: 23px;
+    font-size: 19px;
+}
+#video
+{
+    border-radius: 40px;
+}
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    #main
+{
+    width:100%;
+}
+#bar
+{
+    width:100%;
+    heigt:50px;
+    backround:red;
+    backdrop-filter:blur(10px);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    position:fixed;
+    z-index:2;
+}
+#logo
+{
+    width:19%;
+    backgrund:teal;
+    margin: auto;
+}
+.first
+{
+    width: 90%;
+    heght: 200px;
+    bacground-color: aqua;
+    margin: auto;
+    margin-top: 150px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#lgo
+{
+    width: 18%;
+    heght: 200px;
+    bacground-color: yellowgreen; 
+}
+#info
+{
+    width: 75%;
+    heght: 200px;
+    bacground-color: rgb(219, 206, 108); 
+}
+#load
+{
+    width: 10%;
+    padding: 12px 25px;
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+#dow
+{
+    width: 9%;
+    background-color: #FFF1DA;
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    left: 85%;
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow:hover
+{
+    transform:scale(1.10) ;
+}
+
+#dow2
+{
+    width: 9%;
+    background-color: #FFF1DA;
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    left: 88%;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition:0.50s;
+}
+#dow2:hover
+{
+    transform:scale(1.10) ;
+}
+
+#video
+{
+    border-radius: 55px;
+}
+
+
+#about
+{
+    width: 80%;
+    backgrond-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 525%;
+    left: 10%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#vid
+{
+    width: 40%;
+    backgound-color: #359766;
+    brder: 1px solid #976635;
+}
+
+#vid2
+{
+    width: 50%;
+    backgrund-color: #359766;
+    brder: 1px solid #976635;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    line-height: 22px;
+    font-size: 19px;
+}
+#head
+{
+    text-align: right;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+    margin-top: 53%;
+}
+}
+
 </style>
 
 <body>
+    
     <div id="main">
-        <img src="images/bgp.jpg" width="100%">
+        <img src="images/rr4.jpg" width="100%">
     </div>
 
-    <div id="bar">
-        <div id="logo">
-            <img src="images/draw.png" width="100%">
+    <a htef="images/Solution_1_1.0.apk"><div id="dow"> Download </div></a>
+
+    <div id="about">
+        <div id="vid" style="width:23%;">
+            <video id="video" width="100%" controls muted>
+                <source src="images/phone4.mp4" type="video/mp4" />
+                Your browser does not support video
+                </video>
+                
+        </div>
+        <div  id="vid2">
+            <h1 id="head">Click here and download the app now</h1>
+            <a htef="images/Solution_1_1.0.apk"><div id="dow2"> Download </div></a>
         </div>
     </div>
 
-</br>
-    <div class="first">
-        <div id="lgo"><img src="images/L4.png" width="100%"></div>
-        <div id="info">
-            <h1>Solution</h1>
-            <h2>⭐⭐⭐⭐⭐</h2>
-            <div id="load">Download</div>
-        </div>
-    </div>
+
+    
 
 </body>
 </html>
