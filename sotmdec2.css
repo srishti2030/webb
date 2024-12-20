@@ -1,0 +1,286 @@
+#options
+    {
+        width: 65%;
+        margin: auto;
+        backround-color: brown;
+        text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    #options div
+    {
+        width: 30%;
+        heiht: 300px;
+        ackground-color: bisque;
+        border-radius: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 2vh;
+        border: 1px black solid;
+        box-shadow: 10px 10px 20px grey;
+    }
+    #options div img
+    {
+        margin: auto;
+    }
+    #options div h3
+    {
+        font-size: 3.5vh;
+    }
+    #options div nav
+    {
+        margin: auto;
+        width: 50%;
+        margin-top: 10%;
+        padding: 8px;
+        color: black;
+        border: 1px black solid;
+        border-radius: 10px;
+    }
+    #cardmain
+    {
+        position: relative;
+        width: 95%;
+        backround: rgb(133, 69, 69);
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    #home
+    {
+        width: 80%;
+        backgrund-color: turquoise;
+        margin: auto;
+        pespective: 500px;
+    }
+    #home section
+    {
+      width: 100%;
+      eight: 100vh;
+      backgrund-color: #ec8787;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+    #home section span
+    {
+        width: 31%;
+        heiht: 75vh;
+        background-color: #d1d1d1;
+        border-radius: 15px;
+        overflow: hidden;
+        tranform: rotateY('60deg');
+    }
+    #home section span nav
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+        hight: 50%;
+        bacground-color: rgb(92, 70, 52);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    #home section span nav img
+    {
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+    #home section span nav img:hover
+    {
+        transform: scale(1.10);
+    }
+    #home section span div
+    {
+        padding: 0px 35px;
+    }
+
+    #btn
+    {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        backgound-color: aquamarine;
+    }
+    #btn span
+    {
+        width: 49%;
+        color: #fff;
+        background-color: #142c46;
+        text-align: center;
+        padding: 6px;
+        heigt: 2.5vh;
+        border-radius: 10px;
+        font-size: 11px;
+    }
+    hr
+    {
+        border-color: black;
+    }
+    #moreoption
+    {
+        width: 15%;
+        margin: auto;
+        padding: 15px;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #142c46;
+        color: #fff;
+    }
+
+
+    
+    #aboutmain
+    {
+        width: 90%;
+        margin: auto;
+        backgound-color: rgb(211, 148, 148);
+        text-align: center;
+    }
+    #aboutmain span
+    {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        backgrond-color: rgb(30, 57, 76);
+    }
+    #aboutin
+    {
+        width: 49.5%;
+        heigt: 94vh;
+        backround-color: rgb(213, 192, 168);
+    }
+    #aboutin div
+    {
+        wdth: 90%;
+        box-sizing: border-box;
+        padding: 6vh;
+        padding-top: 25vh;
+        backgound-color: #4ca76a;
+        text-align: left;
+    }
+    #aboutin div nav 
+    {
+        padding: 2vh;
+        backgound-color: #76d48e;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+#footer
+{
+    width: 100%;
+    heiht: 400px;
+    background-image: url(images/footer.jpg);
+    color: #fff;
+}
+#info
+{
+    width: 80%;
+    heiht: 400px;
+    bckground-color: #e73700;
+    margin: auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#info div
+{
+    width: 17%;
+    bakground-color: #eaad9a;
+    box-sizing: border-box;
+    padding: 25px;
+}
+.more
+{
+    width: 100%;
+    backgrond-image: linear-gradient(#d1d1d1,#2f3f50,#142c46);
+    background-color: #142c46;
+    padding: 2%;
+    color: #fff;
+}
+.more div
+{
+    width: 80%;
+    backround-color: #d5b7ad;
+    margin: auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.more div span
+{
+    width: 46%;
+    backround-color: #6678b8;
+}
+.more div span div
+{
+    width: 90%;
+    heght: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 5%;
+    color: #fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#footer
+    {
+        width: 100%;
+        heiht: 400px;
+        background-image: url(images/footer.jpg);
+        color: #fff;
+    }
+    #info
+    {
+        width: 80%;
+        heiht: 400px;
+        bckground-color: #e73700;
+        margin: auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    #info div
+    {
+        width: 17%;
+        bakground-color: #eaad9a;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+    .more
+    {
+        width: 100%;
+        backgrond-image: linear-gradient(#d1d1d1,#2f3f50,#142c46);
+        background-color: #142c46;
+        padding: 2%;
+        color: #fff;
+    }
+    .more div
+    {
+        width: 80%;
+        backround-color: #d5b7ad;
+        margin: auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    .more div span
+    {
+        width: 46%;
+        backround-color: #6678b8;
+    }
+    .more div span div
+    {
+        width: 90%;
+        heght: 50px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-top: 5%;
+        color: #fff;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }

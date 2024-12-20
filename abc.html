@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homescape</title>
+</head>
+
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="sotmdec2.css">
+    <link rel="stylesheet" href="https://cndjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<body>
+    <header>
+        <span class="brand"><img src="images/re.png" width="15%"></span>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="abc.html">Home</a>
+                <a href="page2.html">About</a>
+                <a href="page3.html">Buy</a>
+                <a href="page4.html">Sell</a>
+                <a href="page5.html">Rent</a>
+                <a href="page6.html">Contact</a>
+                <a href="#a2">More</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home">
+        <video class="video-slide" src="images/v1.mp4" autoplay mued loop></video>
+        <video class="video-slide" src="images/v2.mp4" autoplay mued loop></video>
+        <video class="video-slide" src="images/v3.mp4" autoplay mued loop></video>
+        <video class="video-slide" src="images/v4.mp4" autoplay mued loop></video>
+        <div class="content">
+            <h1>homescape<br/><span>real estate</span></h1>
+            <p>Welcome to Homescape, your trusted partner in finding the perfect home and navigating the world of real estate with ease and confidence. Whether you’re a first-time homebuyer, a seasoned investor, or looking to sell your property, we are here to help you achieve your real estate goals with personalized service and expert guidance.At Homescape, we believe that every home is a reflection of the people who live in it, and your journey to finding the right property should be as unique as you are. We offer a diverse range of listings—from cozy apartments to sprawling estates—ensuring that we have something for every style, budget, and need. Our team of dedicated professionals is committed to helping you explore options, make informed decisions, and secure the home of your dreams.</p>
+                
+                
+            <a href="page2.html">Read More</a>
+        </div>
+
+        <div class="slide-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn")
+        const navigation = document.querySelector(".navigation")  
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+
+
+
+
+        const btns = document.querySelectorAll(".nav-btn")
+        const slides = document.querySelectorAll(".video-slide")
+
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active")
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active")
+            });
+
+
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+
+    </script>
+
+
+<br/><br/><br/><br/>
+
+    <div id="options">
+        <div>
+            <br/><br/>
+            <img src="images/buy.png" width="25%">
+            <h3> Buy a home</h3>
+            Find your place with an immersive photo experience and more listings, including things you might not find anywhere else
+
+            <a href="page3.html"><nav><b>Browse homes</b></nav></a>
+            <br/><br/>
+        </div>
+        <div>
+            <br/><br/>
+            <img src="images/sell.png" width="30%">
+            <h3> Sell a home</h3>
+            No matter whichever way you choose to sell your home, we can help you navigate a successful sale.
+
+            <a href="page4.html"><nav><b>Browse homes</b></nav></a>
+            <br/><br/>
+        </div>
+        <div>
+            <br/><br/>
+            <img src="images/rent.png" width="30%">
+            <h3> Rent a home</h3>
+            We are creating a seamless online experience - from the largest rental chain to shopping, applying and paying rent
+
+            <a href="page5.html"><nav><b>Browse homes</b></nav></a>
+            <br/><br/>
+        </div>
+    </div>
+<br/>
+
+<br/><br/>
+<div id="cardmain">
+    <h1>LATEST LISTINGS</h1>
+    <p>Check out some of the latest and best properties published on our website.</p>
+</div>
+
+<br/><br/><br/>
+<div id="home">
+    <section>
+        <span>
+            <nav><img src="images/home1.jpg" width="100%"></nav>
+            <div>
+                <br/>
+            <h3>Independent House/Villa for Sale in Greater ...</h3>
+            <p>₹ 32,00,00,000</p>
+            <p>Well Renovated Kothi, wide Road, nice And Peacefully Location,</p><br/>
+            <hr/>
+            <br/>
+          </div>
+          <div id="btn">
+              <span style="background-color: #142c46;">Contact now</span>
+              <span style="background-color: #142c46;">Details</span>
+            </div>
+            <br/>
+          </span>
+
+          <span>
+            <nav><img src="images/home2.jpg" width="100%"></nav>
+            <div>
+                <br/>
+            <h3>Independent House/Villa for Sale in Greater ...</h3>
+            <p>₹ 32,00,00,000</p>
+            <p>Well Renovated Kothi, wide Road, nice And Peacefully Location,</p><br/>
+            <hr/>
+            <br/>
+          </div>
+          <div id="btn">
+              <span style="background-color: #142c46;">Contact now</span>
+              <span style="background-color: #142c46;">Details</span>
+            </div>
+            <br/>
+          </span>
+
+          <span>
+            <nav><img src="images/home3.jpg" width="100%"></nav>
+            <div>
+                <br/>
+            <h3>Independent House/Villa for Sale in Greater ...</h3>
+            <p>₹ 32,00,00,000</p>
+            <p>Well Renovated Kothi, wide Road, nice And Peacefully Location,</p><br/>
+            <hr/>
+            <br/>
+          </div>
+          <div id="btn">
+              <span style="background-color: #142c46;">Contact now</span>
+              <span style="background-color: #142c46;">Details</span>
+            </div>
+            <br/>
+          </span>
+    </section>  
+<br/><br/>
+    <section>
+        <span>
+            <nav><img src="images/home4.jpg" width="100%"></nav>
+            <div>
+                <br/>
+            <h3>Independent House/Villa for Sale in Greater ...</h3>
+            <p>₹ 32,00,00,000</p>
+            <p>Well Renovated Kothi, wide Road, nice And Peacefully Location,</p><br/>
+            <hr/>
+            <br/>
+          </div>
+          <div id="btn">
+              <span style="background-color: #142c46;">Contact now</span>
+              <span style="background-color: #142c46;">Details</span>
+            </div>
+            <br/>
+          </span>
+
+          <span>
+            <nav><img src="images/home5.jpg" width="100%"></nav>
+            <div>
+                <br/>
+            <h3>Independent House/Villa for Sale in Greater ...</h3>
+            <p>₹ 32,00,00,000</p>
+            <p>Well Renovated Kothi, wide Road, nice And Peacefully Location,</p><br/>
+            <hr/>
+            <br/>
+          </div>
+          <div id="btn">
+              <span style="background-color: #142c46;">Contact now</span>
+              <span style="background-color: #142c46;">Details</span>
+            </div>
+            <br/>
+          </span>
+
+          <span>
+            <nav><img src="images/home6.jpg" width="100%"></nav>
+            <div>
+                <br/>
+            <h3>Independent House/Villa for Sale in Greater ...</h3>
+            <p>₹ 32,00,00,000</p>
+            <p>Well Renovated Kothi, wide Road, nice And Peacefully Location,</p><br/>
+            <hr/>
+            <br/>
+          </div>
+          <div id="btn">
+              <span style="background-color: #142c46;">Contact now</span>
+              <span style="background-color: #142c46;">Details</span>
+            </div>
+            <br/>
+          </span>
+    </section>  
+            
+</div>
+<br/><br/>
+<div id="moreoption">Load more listings</div>
+   
+<br/><br/><br/>
+
+<div id="aboutmain">
+<span>
+    <div id="aboutin">
+      <img src="images/stu.jpeg" width="100%">
+    </div>
+    <div id="aboutin">
+    <div><h1>Need a home loan? Get Pre-approved</h1><br/>
+      <p>Find a lender who can offer compatitive mortgage rates and help you with pre-approval.</p><br/>
+      <nav style="width: 40%; border: 1px black solid;">Get pre-approved now</nav>
+    </div>
+</span>
+<span>
+    </div>
+    <div id="aboutin">
+      <div>
+      <h1>Get Local Info</h1><br/>
+      <p>Does it have pet-friendly rentals? How are the schools? Get important local information on the area you're most intrested in</p><br/>
+      <nav style="text-align: left; color :rgb(79, 79, 79); border: 1px rgb(79, 79, 79) solid;">Address, City. Zip or Neighborhood  </nav>
+      </div>
+    </div>
+    <div id="aboutin"><img src="images/pet.jpeg" width="100%"></div>
+</span>
+</div>
+
+<a name="a2">
+<br/><br/><br/><br/>
+<div class="more">
+  <div>
+    <span>
+      <h1>Our Newsleters</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odio voluptatibus nulla a nobis magni numquam explicabo ea saepe,</p>
+    </span>
+    <span style="padding: 5.5vh;">
+      <div>
+        <nav></nav>
+        <nav style="width: 25%; background-color: #d1d1d1; border-radius: 30px; text-align: center; padding: 5px; box-sizing: border-box; font-size: 12px; color: #142c46;"> <p><b>Submit Button</b></p></nav>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div id="footer">
+  <img src="images/footer.jpg" width="100%" style="position: fixed; z-index: -2;">
+    <div id="info">
+        <div style="width:30%; margin: auto; text-align: center;">
+            <br/>
+            <img src="images/re.png" width="50%">
+            <br/><br/>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit ipsam? Nisi, ducimus. Impedit, laborum? Quisquam, nihil? 
+
+            <br/><br/>
+            <img src="images/so.png" width="70%">
+        </div>
+        <div>
+            <h4>Navigation</h4><br/>
+            <p>Home</p><br/>
+            <p>Pages</p><br/>
+            <p>About us</p><br/>
+            <p>Services</p><br/>
+            <p>404</p><br/>
+        </div>
+        <div>
+            <h4>Quick Link</h4><br/>
+            <p>Contact Us</p><br/>
+            <p>FAQs</p><br/>
+            <p>Blog</p><br/>
+            <p>Gallery</p><br/>
+            <p>Pricing</p><br/>
+        </div>
+        <div style="width: 28%;">
+            <h4>Work Hours</h4><br/>
+            <p>⏲️ 7AM-5 PM, Mon-Sat</p><br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicin elit. Non, eum? </p>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>

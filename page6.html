@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    header
+{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background-color: #142c46;
+}
+header .brand
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigation
+{
+    position: relative;
+    width: 70%;
+    bacground-color: aqua;
+}
+header .navigation .navigation-items a
+{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:before
+{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before
+{
+    width: 100%;
+}
+    #he
+    {
+        text-align: center;
+        color: #142c46;
+    }
+    .contact
+    {
+        width: 65%;
+        hight: 450px;
+        background-color: #d1d1d1;
+        margin-left: 8%;
+        border-radius: 40px;
+        padding: 50px 40px;
+    }
+    #inf
+    {
+        width: 70%;
+        heght: 150px;
+        backround-color: rgb(98, 171, 95);
+        padding: 20px;
+        font-size: 1.3em;
+        font-weight: 900;
+    }
+    #inf span
+    {
+        backround-color: bisque;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    #inf span nav
+    {
+        width: 47%;
+        backround-color: rgb(138, 125, 109);
+        padding: 5px;
+    }
+    input
+    {
+        width: 80%;
+        border-radius: 50px;
+        padding: 12px;
+    }
+    #blue
+    {
+        width: 15%;
+        heiht: 350px;
+        background-color: #142c46;
+        border-radius: 40px;
+        padding: 30px 40px;
+        color: #fff;
+        position: absolute;
+        top: 250px;
+        left: 1300px;
+    }
+    #blue nav
+    {
+        width: 95%;
+        padding: 10px;
+        background-color: #344e69;
+        color: #fff;
+        border-radius: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    .more
+{
+    width: 100%;
+    backgrond-image: linear-gradient(#d1d1d1,#2f3f50,#142c46);
+    background-color: #142c46;
+    padding: 2%;
+    color: #fff;
+}
+.more div
+{
+    width: 80%;
+    backround-color: #d5b7ad;
+    margin: auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.more div span
+{
+    width: 46%;
+    backround-color: #6678b8;
+}
+.more div span div
+{
+    width: 90%;
+    heght: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 5%;
+    color: #fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#footer
+    {
+        width: 100%;
+        heiht: 400px;
+        background-image: url(images/footer.jpg);
+        color: #fff;
+    }
+    #info
+    {
+        width: 80%;
+        heiht: 400px;
+        bckground-color: #e73700;
+        margin: auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    #info div
+    {
+        width: 17%;
+        bakground-color: #eaad9a;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+    .more
+    {
+        width: 100%;
+        backgrond-image: linear-gradient(#d1d1d1,#2f3f50,#142c46);
+        background-color: #142c46;
+        padding: 2%;
+        color: #fff;
+    }
+    .more div
+    {
+        width: 80%;
+        backround-color: #d5b7ad;
+        margin: auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    .more div span
+    {
+        width: 46%;
+        backround-color: #6678b8;
+    }
+    .more div span div
+    {
+        width: 90%;
+        heght: 50px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-top: 5%;
+        color: #fff;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+</style>
+<body>
+    <br/><br/><br/><br/><br/><br/>
+    <header>
+        <span class="brand"><img src="images/re.png" width="15%"></span>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="abc.html">Home</a>
+                <a href="page2.html">About</a>
+                <a href="page3.html">Buy</a>
+                <a href="page4.html">Sell</a>
+                <a href="page5.html">Rent</a>
+                <a href="page6.html">Contact</a>
+                <a href="#a2">More</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="he"><h1>Contact us</h1></div>
+    <div class="contact">
+        <h2>Send us a message</h2>
+        <p>Do you have a question? A complaint? Or need any help to choose <br/>the sight product from <b>Homescape</b> free to contact us</p>
+
+        <div id="inf">
+            <span>
+                <nav>
+                    First Name<br/>
+                    <input type="text"  placeholder="First Name.....">
+                </nav>
+                <nav>
+                    Last Name<br/>
+                    <input type="text" placeholder="Last Name.....">
+                </nav>
+            </span>
+    <br/>
+            <span>
+                <nav>
+                    Email<br/>
+                    <input type="text" placeholder="Email.....">
+                </nav>
+                <nav>
+                    Contact Details<br/>
+                    <input type="text" placeholder="Phone Number.....">
+                </nav>
+            </span>
+            <p>Message</p>
+            <textarea style="margin: 10px; border-radius: 20px; width: 90%; padding: 5px;" cols="40" rows="8" placeholder="  Message....."></textarea>
+
+        </div>
+    </div>
+
+    <div id="blue">
+        <h2>Hi! We are always here<br/>to help you</h2>
+        <nav>
+            <div style="width:20%;"><img src="images/con1.png" width="60%"></div>
+            <div style="width:78%;">Hotline<br/>
+            +91 1234567890</div>
+        </nav>
+        <br/>
+        <nav>
+            <div style="width:20%;"><img src="images/con2.png" width="60%"></div>
+            <div style="width:78%;">SMS/Whatsapp<br/>
+            +91 0987654321</div>
+        </nav>
+        <br/>
+        <nav>
+            <div style="width:20%;"><img src="images/con3.png" width="60%"></div>
+            <div style="width:78%;">Email:<br/>
+            srishtiaggarwal170@gmail.com</div>
+        </nav>
+        <br/>
+        <hr/>
+        <h3>Connect with us</h3>
+        <img style="margin-right: 20px; width: 10%;" src="images/so1.png">
+        <img style="margin-right: 20px; width: 10%;" src="images/so2.png">
+        <img style="margin-right: 20px; width: 10%;" src="images/so3.png">
+        <img style="margin-right: 20px; width: 10%;" src="images/so4.png">
+        <img style="margin-right: 20px; width: 10%;" src="images/so5.png">
+    </div>
+
+    <a name="a2">
+    <br/><br/><br/><br/>
+<div class="more">
+  <div>
+    <span>
+      <h1>Our Newsleters</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odio voluptatibus nulla a nobis magni numquam explicabo ea saepe,</p>
+    </span>
+    <span style="padding: 5.5vh;">
+      <div>
+        <nav></nav>
+        <nav style="width: 25%; background-color: #d1d1d1; border-radius: 30px; text-align: center; padding: 5px; box-sizing: border-box; font-size: 12px; color: #142c46;"> <p><b>Submit Button</b></p></nav>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div id="footer">
+  <img src="images/footer.jpg" width="100%" style="position: fixed; z-index: -2;">
+    <div id="info">
+        <div style="width:30%; margin: auto; text-align: center;">
+            <br/>
+            <img src="images/re.png" width="50%">
+            <br/><br/>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit ipsam? Nisi, ducimus. Impedit, laborum? Quisquam, nihil? 
+
+            <br/><br/>
+            <img src="images/so.png" width="70%">
+        </div>
+        <div>
+            <h4>Navigation</h4>
+            <p>Home</p>
+            <p>Pages</p>
+            <p>About us</p>
+            <p>Services</p>
+            <p>404</p>
+        </div>
+        <div>
+            <h4>Quick Link</h4>
+            <p>Contact Us</p>
+            <p>FAQs</p>
+            <p>Blog</p>
+            <p>Gallery</p>
+            <p>Pricing</p>
+        </div>
+        <div style="width: 28%;">
+            <h4>Work Hours</h4>
+            <p>⏲️ 7AM-5 PM, Mon-Sat</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicin elit. Non, eum? </p>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
