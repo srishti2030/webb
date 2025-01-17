@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+ backgrond-color: #bbbdbc;
+}
+nav{
+  width: 100%;
+  padding: 12px 0;
+  position: absolute;
+  z-index: 5;
+ 
+}
+nav .menu{
+  max-width: 1270px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .logo a{
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+}
+.menu ul a{
+  margin:0 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  display: inline-flex;
+  padding: 10px 12px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.menu ul a:hover:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu ul a:hover{
+  color: #31446e;
+}
+nav label.bttn{
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+nav label.cancel{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+#check{
+  display: none;
+}
+
+.getSer{
+    background-color: orange;
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+    position: relative;
+    transition: scale 0.2 ease ;
+}
+
+.getSer a:hover{
+    color: #31446e;
+    scale: 1.05;
+}  
+
+.getSer:active{
+    scale:0.95
+}
+
+
+
+@media (max-width:940px) {
+  .menu ul{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 45px;
+    height: 100%;
+    background: #31446e;
+    box-shadow: 0 5px 10px #b0b0b5;
+    z-index: 12;
+    transition: all 0.3s ease;
+  }
+  .menu ul a{
+   display: block;
+   font-size: 23px;
+   width: 100%;
+   margin-top: 30px;
+   box-shadow: none;
+   text-align: center;
+  }
+  .menu ul a:hover:before{
+    box-shadow: none;
+  }
+  nav label.bars{
+    display: block;
+  }
+  #check:checked ~ label.bars{
+    display: none;
+  }
+  #check:checked ~ ul label.cancel{
+    display: block;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+
+
+

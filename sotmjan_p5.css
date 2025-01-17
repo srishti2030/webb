@@ -1,0 +1,211 @@
+.block{
+    width: 80%;
+    margin: auto;
+    backgound-color: aqua;
+    display: flex;
+}
+.block span{
+    width: 33%;
+    margin: auto;
+    background-color: #c3c3c3;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4vh;
+    transition: 0.5s ease;
+}
+.block span:hover{
+    transform: scale(1.08);
+    background-color: #31446e;
+    color: #fff;
+}
+.block span i{
+    padding: 5%;
+    font-size: 30px;
+}
+
+
+.message{
+    width: 78%;
+    margin: auto;
+    backround-color: aqua;
+}
+.message input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+.message textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+.button{
+    width: 15%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #c3c3c3;
+    border-radius: 15px;
+}
+.icons{
+    width: 15%;
+    margin: auto;
+    diplay: flex;
+    text-align: center;
+    backgrund-color: aqua;
+    border-radius: 15px;
+}
+
+
+.map{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body{
+		background:yellow;
+	}
+
+	
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body{
+		bacground:cyan;
+	}
+
+    .block{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .block span{
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        background-color: #c3c3c3;
+        border-radius: 20px;
+        text-align: center;
+        padding: 3vh;
+        transition: 0.5s ease;
+    }
+    .block span:hover{
+        transform: scale(1.08);
+        background-color: #31446e;
+        color: #fff;
+    }
+    .block span img{
+        padding-top: 5%;
+    }
+    .button{
+        width: 15%;
+        margin: auto;
+        padding: 12px;
+        text-align: center;
+        background-color: #c3c3c3;
+        border-radius: 15px;
+        font-size: 0.8vh;
+    }
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body{
+		bacground:pink;
+	}
+    .block{
+        width: 80%;
+        margin: auto;
+        backgound-color: aqua;
+        display: flex;
+        justify-content: space-between;
+    }
+    .block span{
+        width: 100%;
+        margin: auto;
+        background-color: #c3c3c3;
+        border-radius: 20px;
+        margin-top: 10px;
+        overflow: visible;
+        text-align: center;
+        padding: 3vh;
+        transition: 0.5s ease;
+    }
+
+    .block span:hover{
+        transform: scale(1.08);
+        background-color: #31446e;
+        color: #fff;
+    }
+    .block span img{
+        padding-top: 5%;
+    }
+    .button{
+        width: 15%;
+        margin: auto;
+        padding: 12px;
+        text-align: center;
+        background-color: #c3c3c3;
+        border-radius: 15px;
+        font-size: 1vh;
+    }
+	
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body{
+		bacground:orange;
+	}
+    .block{
+        width: 80%;
+        margin: auto;
+        backgound-color: aqua;
+        display: flex;
+        justify-content: space-between;
+    }
+    .block span{
+        width: 33%;
+        margin: auto;
+        background-color: #c3c3c3;
+        border-radius: 20px;
+        text-align: center;
+        padding: 3vh;
+        transition: 0.5s ease;
+    }
+    .block span:hover{
+        transform: scale(1.08);
+        background-color: #31446e;
+        color: #fff;
+    }
+    .block span img{
+        padding-top: 5%;
+    }
+    .button{
+        width: 15%;
+        margin: auto;
+        padding: 12px;
+        text-align: center;
+        background-color: #c3c3c3;
+        border-radius: 15px;
+        font-size: 1.7vh;
+    }
+}
+

@@ -1,0 +1,363 @@
+.head{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.head2{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.projects{
+    width: 80%;
+    heiht: 300px;
+    backgound-color: rgb(54, 224, 170);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projects .s2{
+    width: 60%;
+}
+.projects span{
+    width: 39%;
+    eight: 300px;
+    backgound-color: rgb(162, 125, 76);
+    border-radius: 25px;
+    border: 2px #31446e solid;
+    overflow: hidden;
+}
+
+.projects span p{
+    line-height: 30px;
+    font-weight: 700;
+}
+.btn{
+    width: 10%;
+    text-align: center;
+    background-color: #31446e;
+    padding: 10px;
+    border-radius: 30px;
+    magin-top: 2%;
+    magin-bottom: 2%;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    transform: scale(1.07);
+}
+.team{
+    width: 80%;
+    heght: 300px;
+    margin: auto;
+    bacground-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team span{
+    width: 49%;
+    heiht: 300px;
+    background-color: #b0b0b5;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.team span:hover{
+    transform: scale(1.05);
+}
+
+
+.flex{
+    width: 80%;
+    heiht: 300px;
+    margin: auto;
+    bckground-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex span{
+    width: 32%;
+    heiht: 300px;
+    background-color: #fff;
+    border: 1px black solid;
+    border-radius: 30px;
+    color: #31446e;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.flex span:hover{
+    transform: scale(1.05);
+    background-color: #b0b0b5;
+    color: #fff;
+}
+.flex span img{
+    margin-left: 10%;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body{
+		bacground:cyan;
+    }
+    .head h1{
+        font-size: 24px;
+    }
+    .head2 p{
+        font-size: 6px;
+    }
+    .head2{
+        width: 50%;
+    }
+    .head2 h1{
+        font-size: 24px;
+    }
+    .projects{
+        width: 80%;
+        heiht: 300px;
+        backgound-color: rgb(54, 224, 170);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .projects .s2{
+        width: 60%;
+    }
+    .projects span{
+        width: 39%;
+        eight: 300px;
+        backgound-color: rgb(162, 125, 76);
+        border-radius: 25px;
+        border: 2px #31446e solid;
+        overflow: hidden;
+    }
+    
+    .projects span p{
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .btn{
+        width: 10%;
+        text-align: center;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 30px;
+        magin-top: 2%;
+        magin-bottom: 2%;
+        cursor: pointer;
+        color: transparent;
+        transition: 0.5s ease;
+    }
+    .btn:hover{
+        transform: scale(1.07);
+    }
+    .team{
+        width: 80%;
+        heght: 300px;
+        margin: auto;
+        bacground-color: bisque;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team span{
+        width: 49%;
+        heiht: 300px;
+        background-color: #b0b0b5;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+    .team span:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body{
+		bacground:pink;
+	}
+    
+    .head h1{
+        font-size: 24px;
+    }
+    .head2 p{
+        font-size: 6px;
+    }
+    .head2{
+        width: 50%;
+    }
+    .head2 h1{
+        font-size: 24px;
+    }
+    .projects{
+        width: 80%;
+        heiht: 300px;
+        backgound-color: rgb(54, 224, 170);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .projects .s2{
+        width: 60%;
+    }
+    .projects span{
+        width: 39%;
+        eight: 300px;
+        backgound-color: rgb(162, 125, 76);
+        border-radius: 25px;
+        border: 2px #31446e solid;
+        overflow: hidden;
+    }
+    
+    .projects span p{
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .btn{
+        width: 10%;
+        text-align: center;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 30px;
+        magin-top: 2%;
+        magin-bottom: 2%;
+        cursor: pointer;
+        color: transparent;
+        transition: 0.5s ease;
+    }
+    .btn:hover{
+        transform: scale(1.07);
+    }
+    .team{
+        width: 80%;
+        heght: 300px;
+        margin: auto;
+        bacground-color: bisque;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team span{
+        width: 49%;
+        heiht: 300px;
+        background-color: #b0b0b5;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+    .team span:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body{
+		bacground:orange;
+	}
+    .head{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .head h1{
+        font-size: 32px;
+    }
+    .head2{
+        width: 30%;
+    }
+    .head2 h1{
+        font-size: 32px;
+    }
+    .projects{
+        width: 80%;
+        heiht: 300px;
+        backgound-color: rgb(54, 224, 170);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .projects span{
+        width: 39%;
+        eight: 300px;
+        backgound-color: rgb(162, 125, 76);
+        border-radius: 25px;
+        border: 2px #31446e solid;
+        overflow: hidden;
+    }
+    
+    .projects span p{
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .btn{
+        width: 10%;
+        text-align: center;
+        background-color: #31446e;
+        padding: 10px;
+        border-radius: 30px;
+        magin-top: 2%;
+        magin-bottom: 2%;
+        cursor: pointer;
+        color: #fff;
+        transition: 0.5s ease;
+    }
+    .btn:hover{
+        transform: scale(1.07);
+    }
+    .team{
+        width: 80%;
+        heght: 300px;
+        margin: auto;
+        bacground-color: bisque;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team span{
+        width: 49%;
+        heiht: 300px;
+        background-color: #b0b0b5;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+    .team span:hover{
+        transform: scale(1.05);
+    }
+    
+}
